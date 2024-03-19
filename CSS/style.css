@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: rgb(240, 240, 240);
+    --dark-color:  #222222;
+    --secondary-color: #27689d;
+    --light-background: rgb(237, 237, 237);
+}
+
+
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+    background: rgb(255, 252, 252);
+    position: relative;
+    background: rgb(255, 252, 252);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 252, 252, 1) 20%,
+        rgb(195, 198, 199) 70%,
+        rgb(142, 142, 143) 92%
+    );
+} 
+
+
+
+header{
+    width: 100%;
+    height: 15rem;
+}
+
+header .diagonal-background {
+    width: 55rem;
+    height: 20rem; 
+    background: linear-gradient(-20deg, transparent 50%, var(--dark-color) 50%); 
+    
+  }
+ 
+
+header .portfolio-by{
+    color: var(--primary-text-color);
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+    padding-left: 1rem;
+    line-height: 4rem;
+
+}
+
+header .my-name{
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+    line-height: 4rem;
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin-left: 2.5rem;
+    text-decoration:none;
+}
+
+
+main .image-title-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+main img.portrait{
+    width: 14rem;
+    height: 17rem;
+    box-shadow: 10px 5px 10px  black;
+}
+
+main .image-title-container .web-developer{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-left: 2px solid var(--dark-color);
+    padding-left:0.5rem;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+    line-height: 4rem;
+  
+}
+
+main .about-me-container{
+    display:flex;
+    flex-direction: column;
+}
+
+
+main .image-title-container .about-me{
+    margin-left: 2rem;
+    border-right: 2px solid var(--dark-color);
+    border-bottom: 2px solid var(--dark-color);
+    padding-bottom:1rem;
+    padding-right:8rem;
+    padding-left: 2rem;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color: var(--dark-color);
+    transition: color 0.3s ease, font-size 0.3s ease;
+    line-height: 4rem;
+    
+}
+
+main .image-title-container .about-me:hover{
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+main a.cv{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:2rem;
+    width:7rem;
+    padding:0.8rem;
+
+    color:rgb(22, 22, 22);
+    font-size:14px;
+    text-decoration:none;
+    background-color: rgb(201, 131, 2);
+    border-radius:2px;
+    margin-left: 2rem;
+    margin-top: 2rem; 
+    transition: font-size 0.3s ease, width 0.3s ease;
+}
+
+main a.cv:hover{
+    font-size:16px;
+    width: 7.8rem;
+}
+
+main .projects-text{  
+    text-align:center;
+    margin:auto;
+    margin-top: 7rem;
+    margin-bottom: -4rem;
+}
+
+main .button-project-div{
+    margin-top: 6rem;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    margin-bottom:8rem;
+}
+
+main .show-project{
+    width:8rem;
+    height:10rem;
+    margin-top: 2rem;
+    margin-bottom: 100px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    border: none;
+    background-color: var(--dark-color);
+    transition: background-color 0.3s ease;
+    color: rgb(234, 234, 234);
+    border-radius: 0.3rem;
+    margin: 1rem;
+    cursor:pointer;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+   box-shadow: 2px 2px 10px var(--dark-color);
+
+}
+
+
+main .show-project.show{
+    opacity: 1;
+    transform: translateY(0);
+} 
+
+main .show-project.primary{
+    background-color:  rgb(40, 40, 40);
+}
+
+main .show-project:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+main.show-project:active{
+background-color: rgb(40, 40, 40);
+
+}
+
+main .project{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin-top: -15rem;
+
+    background-color: var(--light-background);
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+ main .close-project1{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size : 3rem;
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+    border: none;
+    background-color: var(--light-background); 
+ }
+
+ main .close-project2{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size : 3rem;
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+    border: none;
+    background-color: var(--light-background); 
+ }
+ main .close-project3{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size : 3rem;
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+    border: none;
+    background-color: var(--light-background); 
+ }
+
+ main .close-project4{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size : 3rem;
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+    border: none;
+    background-color: var(--light-background); 
+    
+ }
+
+ main .github-icon{
+    font-size:1.5rem;
+
+ }
+
+main .hidden{
+display: none; 
+}
+
+
+main .guess-number{
+    width: 95%;
+    height: 150%;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.1);
+}
+
+
+main .project-name{
+    color: var(--dark-color);
+    font-size: 1rem; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .description-text{
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+main .link-to-project{
+    color: var(--dark-color);
+    text-decoration: underline overline var(--dark-color);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease;
+}
+
+main .link-to-project:hover{
+    color: var(--secondary-color);
+   
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+main .coding-text{
+    width: 18rem;
+    height:10rem;
+    text-align:center;
+    font-size: 14px;
+    margin:auto;
+    line-height: 1.1rem;
+
+    border-radius:20px;
+    margin-bottom:2rem;
+    padding:1rem;
+    margin-top: -4rem;
+}
+
+main .knowledge-container{
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:30rem;
+    height: 35rem;
+    margin-bottom:4rem;
+
+}
+
+
+
+main .knowledge-icon{
+    display:flex;
+    flex-wrap:wrap;
+    width: 6rem;
+    height:6rem;
+    margin:0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(200, 200, 200);
+
+}
+
+
+
+
+
+footer{
+    box-sizing: content-box;
+    margin: auto; 
+    width: 100%;
+    height: 300px;
+    line-height: 4rem;
+    background-color:#2C2C2C;
+    padding: 20px 10px 20px 10px;
+    background-color: var(--dark-color);
+
+    
+}
+
+footer .footer-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+}
+
+footer h3.get-in-touch{
+    color:white;
+}
+
+footer a.linkedin{
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:1.5rem;
+    height:1,5rem;
+    text-decoration: none;
+    color:white;
+    background-color:#27689d;
+    padding:2px;
+    border-radius:2px;
+    font-size: 1,5rem;
+    margin: 1rem;
+}
+
+footer .fa-github{
+    color:white;
+    font-size: 1.5rem;
+}
+
+
+
+footer a.email-me{
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:rgb(220, 220, 220);
+    width:1.5rem;
+    height:1,5rem;
+    font-size: 12px;
+    text-decoration:none;
+}
+
+
+@media (max-width: 610px){
+
+    header{
+        height:10rem;
+        width: 100%;
+   
+    }
+
+    header .diagonal-background {
+     
+        height:10rem;
+        width: 100%;
+        background-color: var(--dark-color);
+      }
+
+    header .my-name{
+        font-size: 3rem;
+    }
+
+    main .image-title-container{
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        
+        margin-top: 6rem;
+        padding-right:2rem;
+    }
+
+    main img.portrait{
+        width: 12rem;
+        height: 15rem;
+        
+    
+    }
+
+    main .image-title-container .web-developer{
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+        padding-left:0.5rem;
+        line-height: 4rem;
+        font-size:16px;
+      
+    }
+
+
+    main .image-title-container .about-me{
+ 
+        padding-bottom:1rem;
+        padding-right:1.5rem;
+        padding-left: 1rem;
+        font-size:16px;    
+        text-align:center;   
+    }
+
+
+
+    main .projects-text{
+        margin-top: 6rem;
+    }
+
+    main div.button-project-div{
+        margin:auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        padding-right: 2rem;
+        width: 400px;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .show-project{
+        width:6rem;
+        height:10rem;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        font-size: 12px;
+        padding:0.5rem;
+        margin: 1rem;
+        cursor:pointer;
+    }
+
+    main .project{
+        width: 80%;
+        padding: 3rem;
+    }
+
+    main .knowledge-container{
+        margin:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        
+        width:20rem;
+        height: 30rem;
+    }
+
+    main .knowledge-icon{
+        width: 5rem;
+        height:5rem;
+    }
+}
