@@ -70,7 +70,7 @@ main .image-title-container{
 
 main img.portrait{
     width: 14rem;
-    height: 17rem;
+    height: 18rem;
     box-shadow: 10px 5px 10px  black;
 }
 
@@ -131,6 +131,22 @@ main a.cv{
 
 main a.cv:hover{
     font-size:16px;
+    width: 7.8rem;
+}
+
+main .my-knowledge{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 7rem;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 2px;
+    transition: font-size 0.3s ease, width 0.3s ease;
+}
+
+main .my-knowledge:hover{
+    font-size: 14px;
     width: 7.8rem;
 }
 

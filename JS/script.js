@@ -78,3 +78,17 @@ window.addEventListener('scroll', function () {
         knowledgeContainer.classList.remove('show');
     }
 });
+
+// Scroll to Knowledge I have
+const btnScrollTo = document.querySelector('.my-knowledge');
+const knowledgeSection = document.querySelector('.coding-text');
+
+btnScrollTo.addEventListener('click', function (e) {
+    const knowledgeCoords = knowledgeSection.getBoundingClientRect();
+
+    window.scrollTo({
+        left: knowledgeCoords.left + window.pageXOffset,
+        top: knowledgeCoords.top + window.pageYOffset,
+        behavior: 'smooth'
+    })
+})
