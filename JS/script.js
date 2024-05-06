@@ -1,13 +1,14 @@
 const project = document.querySelectorAll('.project');
-const overlay = document.querySelector('.overlay');
+const btnShowProjectWindow = document.querySelectorAll('.show-project');
+const allSections = document.querySelectorAll('.section');
 
+const overlay = document.querySelector('.overlay');
 const btnCloseProjectWindow1 = document.querySelector('.close-project1');
 const btnCloseProjectWindow2 = document.querySelector('.close-project2');
 const btnCloseProjectWindow3 = document.querySelector('.close-project3');
 const btnCloseProjectWindow4 = document.querySelector('.close-project4');
 
 
-const btnShowProjectWindow = document.querySelectorAll('.show-project');
 
 const openProject = function (projectId) {
     const project = document.getElementById(projectId)
@@ -50,7 +51,7 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-
+// Få fram projekt med scroll
 window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
 
@@ -65,21 +66,32 @@ window.addEventListener('scroll', function () {
 
 });
 
+// Få fram kunskapsikoner & kunskapstext med hjälp av Intersection Observer API
 
+const revealSection = function (entries, observer) {
+    const [entry] = entries;
+    console.log(entry);
 
-window.addEventListener('scroll', function () {
+    if (!entry.isIntersecting) return;
 
-    const knowledgeContainer = document.querySelector('.knowledge-container');
-    var scrollPosition = window.scrollY;
+    entry.target.classList.remove('section--hidden');
+    observer.unobserve(entry.target);
+}
 
-    if (scrollPosition > 250 || window.innerWidth <= 600) {
-        knowledgeContainer.classList.add('show');
-    } else {
-        knowledgeContainer.classList.remove('show');
-    }
+const sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    threshold: 0.35,
 });
 
-// Scroll to Knowledge I have
+
+allSections.forEach(function (section) {
+    sectionObserver.observe(section);
+    section.classList.add('section--hidden');
+
+});
+
+
+// Scrolla till Knowledge-container
 const btnScrollTo = document.querySelector('.my-knowledge');
 const knowledgeSection = document.querySelector('.coding-text');
 
