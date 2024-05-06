@@ -334,6 +334,21 @@ main .coding-text{
     margin-bottom:2rem;
     padding:1rem;
     margin-top: -4rem;
+    
+}
+
+main .qoutation-left{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-left: -1rem;
+    
+}
+
+main .qoutation-right{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-right: -2rem;
+  
 }
 
 main .knowledge-container{
