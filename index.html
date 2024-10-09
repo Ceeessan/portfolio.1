@@ -33,22 +33,30 @@
 <body>
 
     <header>
+
         <div class="diagonal-background">
-            <h4 class="portfolio-by"> Portfolio av</h4>
+
+            <h4 id="portfolioBy" class="portfolioByClass"> Portfolio av</h4>
             <h1 class="my-name"> Cecilia Carlsen</h1>
+            <div class="togglerDiv">
+                <button id="languageToggler" class="languageTogglerButton">English</button>
+            </div>
         </div>
+
     
     </header>
 
+
+    
 
     <main>
     <div class="image-title-container">
     <img src="images/20230908_065859.jpg" alt="portrait" class="portrait">
     <div class="about-me-container">
-        <h3 class="web-developer">Jag är Webbutvecklare</h3>
-        <a class="about-me" href="about-me.html">Om mig</a>
-        <a href="files/CV.pdf" download class="cv">Ladda ner CV</a>
-        <button class="my-knowledge">Kompetens 
+        <h3 id="webDeveloper">Jag är Webbutvecklare</h3>
+        <a id="aboutMe" href="about-me.html">Om mig</a>
+        <a href="files/CV.pdf" download id="cv">Ladda ner CV</a>
+        <button class="my-knowledge" id="competence">Kompetens 
             <a class="arrow-icon">
                 <i class="fa fa-arrow-down" ></i>
              </a>
@@ -56,7 +64,7 @@
     </div>  
 </div>
 
-<h1 class="projects-text">Mina Projekt </h1>
+<h1 id="myProjectsText">Mina Projekt </h1>
 
         <div class="button-project-div">
 
@@ -77,10 +85,10 @@
             <button class="close-project1">&times;</button>
 
             <img src="images/Skärmbild 2024-02-23 193347.png" alt="guess_my_number" class="guess-number">
-            <p class="project-name">PoP restaurang-HTML/CSS</p>
+            <p class="project-name">PoP Restaurant-HTML/CSS</p>
           
 
-            <a href="https://ceeessan.github.io/gammal-uppgift-2-ok/bokabord.html" target="_blank" class="link-to-project">Öppna project</a>
+            <a href="https://ceeessan.github.io/gammal-uppgift-2-ok/bokabord.html" target="_blank" class="link-to-project" id="project1Open">Öppna projekt</a>
         </div>
         <div class="overlay hidden"> </div>
 
@@ -94,7 +102,7 @@
             <img src="images/project_numberGame.png" alt="guess_my_number" class="guess-number">
             <p class="project-name">Guess my number - Game</p>
 
-            <a href="https://ceeessan.github.io/guess-number-game/" target="_blank" class="link-to-project">Öppna project</a>
+            <a href="https://ceeessan.github.io/guess-number-game/" target="_blank" class="link-to-project" id="project2Open">Öppna projekt</a>
         </div>
            
 
@@ -106,8 +114,8 @@
             <img src="images/openweather.png" alt="guess_my_number" class="guess-number">
 
             <p class="project-name">Open Weather App - with API</p>
-            <p class="description-text"> Ett projekt där vi nyttjat oss av API:er.</p>
-            <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project">Öppna project</a>
+            <p class="description-text" id="project3Desc"> Ett projekt där vi nyttjat oss av API:er.</p>
+            <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project" id="project3Open">Öppna projekt</a>
         </div>
 
 <!-- knapp 4 -->
@@ -117,8 +125,8 @@
 
             <img src="images/wordpress-project.png" alt="guess_my_number" class="guess-number">
 
-            <p class="project-name">WordPress - Sammarbete med elev</p>
-            <p class="description-text"> Tyvärr är detta projekt inte tillgänligligt online men arbetet ligger ute på mitt github.</p>
+            <p class="project-name" id="project4Name">WordPress - Sammarbete med annan utvecklare</p>
+            <p class="description-text" id="project4Desc"> Tyvärr är detta projekt inte tillgänligligt online men projektet ligger ute på mitt github.</p>
             <a href="https://github.com/Ceeessan/moody_studio.git" target="_blank" class="link-to-project github-icon">
                 <i class="fa fa-github"></i>
             </a>
@@ -127,7 +135,7 @@
     
 
 
-        <p class="coding-text section section--visible"> <span class="qoutation-left">"</span>Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.
+        <p class="coding-text section section--visible" id="knowledgeText"> <span class="qoutation-left">"</span>Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.
         <span class="qoutation-right">"</span> </p>
         
 
@@ -170,7 +178,7 @@
     <footer>
 
         <div class="footer-container">
-            <h3 class="get-in-touch"> Kontakta mig </h3>
+            <h3 class="get-in-touch" id="contactMe"> Kontakta mig </h3>
 
             <a
                 class="linkedin"

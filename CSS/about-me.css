@@ -41,7 +41,7 @@ header .diagonal-background {
   }
  
 
-header .portfolio-by{
+header #portfolioByAboutMe{
     color: var(--primary-text-color);
     font-family: Dancing Script, Arial, Helvetica, sans-serif;
     padding-left: 1rem;
@@ -62,6 +62,22 @@ header .my-name{
 header .my-name:hover{
     color:white;
     font-size: 4.5rem;
+}
+
+.togglerDiv{
+    text-align: right; 
+    margin-left: 80rem;
+}
+
+#languageToggler{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 4rem;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 2px;
+    transition: font-size 0.3s ease, width 0.3s ease;
 }
 
 
