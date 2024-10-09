@@ -249,6 +249,11 @@ footer a.email-me{
         font-size: 3.8rem;
     }
     
+    .togglerDiv{ 
+        margin-top: 2rem;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
 
     main .about-me-container{
         width: 20rem;

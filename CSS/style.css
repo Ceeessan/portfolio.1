@@ -485,6 +485,11 @@ footer a.email-me{
         font-size: 3rem;
     }
 
+    .togglerDiv{
+        margin-left: 0rem;
+        margin-top: 3rem;
+    }
+
     main .image-title-container{
         margin:auto;
         display:flex;
