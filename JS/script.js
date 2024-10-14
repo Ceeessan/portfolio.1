@@ -1,4 +1,7 @@
 const menuBar = document.getElementById('menuBarId');
+const menuContent = document.querySelector('.menuBar');
+const sideMenu = document.querySelector(".side-menu");
+
 const project = document.querySelectorAll('.project');
 const btnShowProjectWindow = document.querySelectorAll('.show-project');
 const allSections = document.querySelectorAll('.section');
@@ -9,8 +12,11 @@ const btnCloseProjectWindow2 = document.querySelector('.close-project2');
 const btnCloseProjectWindow3 = document.querySelector('.close-project3');
 const btnCloseProjectWindow4 = document.querySelector('.close-project4');
 
-const activateMenuBar = function(){
+const activateMenuBar = function () {
     menuBar.classList.toggle("change");
+
+    sideMenu.classList.toggle("active");
+
 }
 
 menuBar.addEventListener('click', activateMenuBar);
@@ -168,30 +174,30 @@ const knowledgeText = document.getElementById('knowledgeText');
 const contactMe = document.getElementById('contactMe');
 
 const togglerButton = document.querySelector('.languageTogglerButton');
-let currentLanguage =  'en';
+let currentLanguage = 'en';
 
-function switchLanguage(){
-  currentLanguage = currentLanguage === 'en' ? 'sv' : 'en';
-  
-  togglerButton.textContent = toggleText[currentLanguage].languageToggler;
-  portfolioBy.textContent = toggleText[currentLanguage].portfolioBy;
-  webDeveloperTitle.textContent = toggleText[currentLanguage].webDeveloper;
-  aboutMe.textContent = toggleText[currentLanguage].aboutMe;
-  cvDownload.textContent = toggleText[currentLanguage].cv;
-  competence.textContent = toggleText[currentLanguage].competence;
-  myProjectsText.textContent = toggleText[currentLanguage].myProjectsText;
-  project1Open.textContent = toggleText[currentLanguage].project1Open;
-  project2Open.textContent = toggleText[currentLanguage].project2Open;
-  project3Desc.textContent = toggleText[currentLanguage].project3Desc;
-  project3Open.textContent = toggleText[currentLanguage].project3Open;
-  project4Name.textContent = toggleText[currentLanguage].project4Name;
-  project4Desc.textContent = toggleText[currentLanguage].project4Desc;
-  knowledgeText.textContent = toggleText[currentLanguage].knowledgeText;
-  contactMe.textContent = toggleText[currentLanguage].contactMe;
+function switchLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'sv' : 'en';
+
+    togglerButton.textContent = toggleText[currentLanguage].languageToggler;
+    portfolioBy.textContent = toggleText[currentLanguage].portfolioBy;
+    webDeveloperTitle.textContent = toggleText[currentLanguage].webDeveloper;
+    aboutMe.textContent = toggleText[currentLanguage].aboutMe;
+    cvDownload.textContent = toggleText[currentLanguage].cv;
+    competence.textContent = toggleText[currentLanguage].competence;
+    myProjectsText.textContent = toggleText[currentLanguage].myProjectsText;
+    project1Open.textContent = toggleText[currentLanguage].project1Open;
+    project2Open.textContent = toggleText[currentLanguage].project2Open;
+    project3Desc.textContent = toggleText[currentLanguage].project3Desc;
+    project3Open.textContent = toggleText[currentLanguage].project3Open;
+    project4Name.textContent = toggleText[currentLanguage].project4Name;
+    project4Desc.textContent = toggleText[currentLanguage].project4Desc;
+    knowledgeText.textContent = toggleText[currentLanguage].knowledgeText;
+    contactMe.textContent = toggleText[currentLanguage].contactMe;
 }
 
 function initializeLanguage() {
-    switchLanguage(); 
+    switchLanguage();
 }
 
 togglerButton.addEventListener('click', switchLanguage);
