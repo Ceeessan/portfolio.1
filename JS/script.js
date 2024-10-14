@@ -1,3 +1,4 @@
+const menuBar = document.getElementById('menuBarId');
 const project = document.querySelectorAll('.project');
 const btnShowProjectWindow = document.querySelectorAll('.show-project');
 const allSections = document.querySelectorAll('.section');
@@ -8,6 +9,11 @@ const btnCloseProjectWindow2 = document.querySelector('.close-project2');
 const btnCloseProjectWindow3 = document.querySelector('.close-project3');
 const btnCloseProjectWindow4 = document.querySelector('.close-project4');
 
+const activateMenuBar = function(){
+    menuBar.classList.toggle("change");
+}
+
+menuBar.addEventListener('click', activateMenuBar);
 
 
 const openProject = function (projectId) {
