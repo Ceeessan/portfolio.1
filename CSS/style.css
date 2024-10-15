@@ -52,8 +52,13 @@ header .buttons-header-div{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
     margin-top: 2rem;
+}
+
+.menu-content{
+    display:flex;
+    flex-direction: row;
 }
 
 header #menuBarId{
