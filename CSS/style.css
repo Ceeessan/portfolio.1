@@ -484,7 +484,8 @@ footer a.email-me{
     }
 
     header .my-name{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        width: 100%;
     }
 
     .menu-content {
@@ -493,6 +494,8 @@ footer a.email-me{
 
     header #menuBarId{
         display:inline-block;
+        margin-left: 2.7rem;
+        margin-top: 0.5rem;
     }
 
 
@@ -515,24 +518,21 @@ footer a.email-me{
         height: 15rem; 
     }
 
-    main .image-title-container .web-developer{
+    main .image-title-container #webDeveloper{
         margin-left: 0.5rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         padding-left:0.5rem;
-        line-height: 4rem;
-        font-size:2rem;
+        line-height: 2rem;
+        font-size: 2rem;
     }
 
-    main .image-title-container .about-me{
-        margin-right: 0;
-        padding-bottom:0.5rem;
-        padding-right:1rem;
-        font-size:2rem;    
+    main .image-title-container #aboutMe{
+        font-size:1.5rem;    
         text-align:center; 
-        border-bottom: none;  
+        
     }
 
-    main .projects-text{
+    main #myProjectsText{
         margin-top: 6rem;
     }
 
@@ -571,6 +571,7 @@ footer a.email-me{
         text-align:center;       
         width:20rem;
         height: 30rem;
+        margin-bottom: 2rem;
     }
 
     main .knowledge-icon{
