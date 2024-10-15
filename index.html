@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
     <header>
         <div class="header-background">
             <div class="made-by-div">
@@ -50,144 +49,125 @@
                         </div>
                         </div>           
                     </div>    
-                    </div>
-                    
+                </div>              
         </div>    
     </header>
 
-
-    
-
-<main>
-    <div class="image-title-container">
-        <img src="images/20230908_065859.jpg" alt="portrait" class="portrait">
+    <main>
+        <div class="image-title-container">
+            <img src="images/20230908_065859.jpg" alt="portrait" class="portrait">
         <div class="about-me-container">
             <h3 id="webDeveloper">Jag är Webbutvecklare</h3>
             <a id="aboutMe" href="about-me.html">Om mig</a>
         </div>  
-    </div>
-
-<h1 id="myProjectsText">Mina Projekt </h1>
-
-        <div class="button-project-div">
-
-            <button class="show-project" data-target="project1">Restaurant-HTML/CSS
-            </button>
-
-            <button class="show-project" data-target="project2">Guess my number-Game</button>
-
-            <button class="show-project" data-target="project3">Open Weather App- with API</button>
-
-            <button class="show-project" data-target="project4">Wordpress</button>
         </div>
 
+        <h1 id="myProjectsText">Mina Projekt </h1>
+            <div class="button-project-div">
+                <button class="show-project" data-target="project1">Restaurant-HTML/CSS
+                </button>
 
-        <!-- knapp 1 -->
-        <div class="project hidden" id="project1">
+                <button class="show-project" data-target="project2">Guess my number-Game
+                </button>
 
-            <button class="close-project1">&times;</button>
+                <button class="show-project" data-target="project3">Open Weather App- with API
+                </button>
 
-            <img src="images/Skärmbild 2024-02-23 193347.png" alt="guess_my_number" class="guess-number">
-            <p class="project-name">PoP Restaurant-HTML/CSS</p>
-          
+                <button class="show-project" data-target="project4">Wordpress
+                </button>
+            </div>
 
-            <a href="https://ceeessan.github.io/gammal-uppgift-2-ok/bokabord.html" target="_blank" class="link-to-project" id="project1Open">Öppna projekt</a>
-        </div>
-        <div class="overlay hidden"> </div>
+            <!-- knapp 1 -->
+            <div class="project hidden" id="project1">
+                <button class="close-project1">&times;</button>
 
+                <img src="images/Skärmbild 2024-02-23 193347.png" alt="guess_my_number" class="guess-number">
+                <p class="project-name">PoP Restaurant-HTML/CSS</p>
+            
+                <a href="https://ceeessan.github.io/gammal-uppgift-2-ok/bokabord.html" target="_blank" class="link-to-project" id="project1Open">Öppna projekt</a>
+            </div>
+            <div class="overlay hidden"> </div>
 
+            <!-- knapp 2 -->
+            <div class="project hidden" id="project2">
+                <button class="close-project2">&times;</button>
 
-<!-- knapp 2 -->
-        <div class="project hidden" id="project2">
+                <img src="images/project_numberGame.png" alt="guess_my_number" class="guess-number">
+                <p class="project-name">Guess my number - Game</p>
 
-            <button class="close-project2">&times;</button>
+                <a href="https://ceeessan.github.io/guess-number-game/" target="_blank" class="link-to-project" id="project2Open">Öppna projekt</a>
+            </div>          
 
-            <img src="images/project_numberGame.png" alt="guess_my_number" class="guess-number">
-            <p class="project-name">Guess my number - Game</p>
+            <!-- knapp 3 -->
+            <div class="project hidden" id="project3">
+                <button class="close-project3">&times;</button>
 
-            <a href="https://ceeessan.github.io/guess-number-game/" target="_blank" class="link-to-project" id="project2Open">Öppna projekt</a>
-        </div>
-           
+                <img src="images/openweather.png" alt="guess_my_number" class="guess-number">
 
-<!-- knapp 3 -->
-        <div class="project hidden" id="project3">
+                <p class="project-name">Open Weather App - with API</p>
+                <p class="description-text" id="project3Desc"> Ett projekt där vi nyttjat oss av API:er.</p>
+                <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project" id="project3Open">Öppna projekt</a>
+            </div>
 
-            <button class="close-project3">&times;</button>
+            <!-- knapp 4 -->
+            <div class="project hidden" id="project4">
+            <button class="close-project4">&times;</button>
 
-            <img src="images/openweather.png" alt="guess_my_number" class="guess-number">
+                <img src="images/wordpress-project.png" alt="guess_my_number" class="guess-number">
 
-            <p class="project-name">Open Weather App - with API</p>
-            <p class="description-text" id="project3Desc"> Ett projekt där vi nyttjat oss av API:er.</p>
-            <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project" id="project3Open">Öppna projekt</a>
-        </div>
-
-<!-- knapp 4 -->
-        <div class="project hidden" id="project4">
-
-           <button class="close-project4">&times;</button>
-
-            <img src="images/wordpress-project.png" alt="guess_my_number" class="guess-number">
-
-            <p class="project-name" id="project4Name">WordPress - Sammarbete med annan utvecklare</p>
-            <p class="description-text" id="project4Desc"> Tyvärr är detta projekt inte tillgänligligt online men projektet ligger ute på mitt github.</p>
-            <a href="https://github.com/Ceeessan/moody_studio.git" target="_blank" class="link-to-project github-icon">
+                <p class="project-name" id="project4Name">WordPress - Sammarbete med annan utvecklare</p>
+                <p class="description-text" id="project4Desc"> Tyvärr är detta projekt inte tillgänligligt online men projektet ligger ute på mitt github.</p>
+                <a href="https://github.com/Ceeessan/moody_studio.git" target="_blank" class="link-to-project github-icon">
                 <i class="fa fa-github"></i>
-            </a>
-        </div>
+                </a>
+            </div> 
 
-    
+            <p class="coding-text section section--visible" id="knowledgeText"> 
+                <span class="qoutation-left">"</span>
+                    Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.
+                <span class="qoutation-right">"</span> 
+            </p>    
 
+            <div class="knowledge-container section section--visible">       
+                <img src="images/html.png" alt="html" id="html" class="knowledge-icon">
 
-        <p class="coding-text section section--visible" id="knowledgeText"> <span class="qoutation-left">"</span>Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.
-        <span class="qoutation-right">"</span> </p>
-        
+                <img src="images/css.png" alt="css" id="css" class="knowledge-icon">
 
-        <div class="knowledge-container section section--visible">
+                <img src="images/sass.png" alt="sass" id="sass" class="knowledge-icon">
 
-        
-            <img src="images/html.png" alt="html" id="html" class="knowledge-icon">
+                <img src="images/js.png" alt="js" id="js" class="knowledge-icon">
 
-            <img src="images/css.png" alt="css" id="css" class="knowledge-icon">
+                <img src="images/typescript.jpg" alt="typescript" id="typescript" class="knowledge-icon">
 
-            <img src="images/sass.png" alt="sass" id="sass" class="knowledge-icon">
+                <img src="images/wordpress.png" alt="wordpress" id="wordpress" class="knowledge-icon">
 
-            <img src="images/js.png" alt="js" id="js" class="knowledge-icon">
+                <img src="images/woo.png" alt="woo" id="woocommerce" class="knowledge-icon">
 
-            <img src="images/typescript.jpg" alt="typescript" id="typescript" class="knowledge-icon">
+                <img src="images/react.png" alt="react" id="react" class="knowledge-icon">
 
-            <img src="images/wordpress.png" alt="wordpress" id="wordpress" class="knowledge-icon">
+                <img src="images/php.png" alt="php" id="php" class="knowledge-icon">
 
-            <img src="images/woo.png" alt="woo" id="woocommerce" class="knowledge-icon">
+                <img src="images/database.png" alt="database" id="database" class="knowledge-icon">
 
-            <img src="images/react.png" alt="react" id="react" class="knowledge-icon">
+                <img src="images/uxui.png" alt="uxui" id="uxui" class="knowledge-icon">
 
-            <img src="images/php.png" alt="php" id="php" class="knowledge-icon">
+                <img src="images/nodejs.png" alt="nodejs" id="nodejs" class="knowledge-icon">
 
-            <img src="images/database.png" alt="database" id="database" class="knowledge-icon">
+                <img src="images/git.png" alt="git" id="git" class="knowledge-icon">
 
-            <img src="images/uxui.png" alt="uxui" id="uxui" class="knowledge-icon">
+                <img src="images/github.jpg" alt="github" id="github" class="knowledge-icon">
 
-            <img src="images/nodejs.png" alt="nodejs" id="nodejs" class="knowledge-icon">
-
-            <img src="images/git.png" alt="git" id="git" class="knowledge-icon">
-
-            <img src="images/github.jpg" alt="github" id="github" class="knowledge-icon">
-
-            <img src="images/sourcetree.jpg" alt="sourcetree" id="sourcetree" class="knowledge-icon">
-        </div>
+                <img src="images/sourcetree.jpg" alt="sourcetree" id="sourcetree" class="knowledge-icon">
+            </div>
     </main>
 
-
     <footer>
-
         <div class="footer-container">
-            <h3 class="get-in-touch" id="contactMe"> Kontakta mig </h3>
+            <h3 class="get-in-touch" id="contactMe">            
+                Kontakta mig 
+            </h3>
 
-            <a
-                class="linkedin"
-                href="https://www.linkedin.com/in/cecilia-carlsen-567a99264/"
-                target="_blank"
-                > 
+            <a class="linkedin" href="https://www.linkedin.com/in/cecilia-carlsen-567a99264/" target="_blank"> 
                 <i class="fa fa-linkedin" id="linkedin"></i>
             </a>
         <div>
@@ -195,15 +175,12 @@
                 <i class="fa fa-github"></i>
             </a>
         </div>
-         
-
-            <p><a href="mailto:cessan__94@hotmail.com" class="email-me">Cessan__94@hotmail.com</a></p>
             
+            <p>
+                <a href="mailto:cessan__94@hotmail.com" class="email-me">Cessan__94@hotmail.com
+                </a>
+            </p>        
         </div>
-
-    </footer>
-
-
-  
+    </footer> 
 </body>
 </html>

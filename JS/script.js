@@ -14,13 +14,9 @@ const btnCloseProjectWindow4 = document.querySelector('.close-project4');
 
 const activateMenuBar = function () {
     menuBar.classList.toggle("change");
-
     sideMenu.classList.toggle("active");
-
 }
-
 menuBar.addEventListener('click', activateMenuBar);
-
 
 const openProject = function (projectId) {
     const project = document.getElementById(projectId)
@@ -32,7 +28,6 @@ const closeProject = function () {
     project.forEach(function (projectItem) {
         projectItem.classList.add('hidden');
     });
-
     overlay.classList.add('hidden');
 }
 
@@ -56,7 +51,6 @@ overlay.addEventListener('click', closeProject);
 btnCloseProjectWindow4.addEventListener('click', closeProject);
 overlay.addEventListener('click', closeProject);
 
-
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !project.classList.contains('hidden')) {
         closeProject();
@@ -67,7 +61,6 @@ document.addEventListener('keydown', function (e) {
 window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
 
-
     btnShowProjectWindow.forEach(function (button) {
         if (scrollPosition > 150 || window.innerWidth <= 600) {
             button.classList.add('show');
@@ -75,11 +68,9 @@ window.addEventListener('scroll', function () {
             button.classList.remove('show');
         }
     });
-
 });
 
 // Get knowledge-icons & text with Intersection Observer API
-
 const revealSection = function (entries, observer) {
     const [entry] = entries;
     console.log(entry);
@@ -95,13 +86,10 @@ const sectionObserver = new IntersectionObserver(revealSection, {
     threshold: 0.35,
 });
 
-
 allSections.forEach(function (section) {
     sectionObserver.observe(section);
     section.classList.add('section--hidden');
-
 });
-
 
 // Scroll to Knowledge-container
 const btnScrollTo = document.querySelector('.my-knowledge');
@@ -116,7 +104,6 @@ btnScrollTo.addEventListener('click', function (e) {
         behavior: 'smooth'
     });
 });
-
 
 //Page 1 Toggler
 const toggleText = {
@@ -155,7 +142,6 @@ const toggleText = {
         contactMe: "Contact me"
     }
 }
-
 
 const portfolioBy = document.querySelector('.portfolioByClass');
 
@@ -202,4 +188,3 @@ function initializeLanguage() {
 
 togglerButton.addEventListener('click', switchLanguage);
 initializeLanguage();
-
