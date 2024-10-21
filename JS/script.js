@@ -1,6 +1,9 @@
 const menuBar = document.getElementById('menuBarId');
-const menuContent = document.querySelector('.menuBar');
 const sideMenu = document.querySelector(".side-menu");
+const buttonsHeaderDiv = document.querySelector('.buttons-header-div')
+
+const btnScrollTo = document.querySelector('.my-knowledge');
+const knowledgeSection = document.querySelector('.coding-text');
 
 const project = document.querySelectorAll('.project');
 const btnShowProjectWindow = document.querySelectorAll('.show-project');
@@ -12,11 +15,28 @@ const btnCloseProjectWindow2 = document.querySelector('.close-project2');
 const btnCloseProjectWindow3 = document.querySelector('.close-project3');
 const btnCloseProjectWindow4 = document.querySelector('.close-project4');
 
-const activateMenuBar = function () {
-    menuBar.classList.toggle("change");
-    sideMenu.classList.toggle("active");
+const openMenuBar = function () {
+    menuBar.classList.add("change");
+    sideMenu.classList.add("active");
+    sideMenu.style.display = 'block';
 }
-menuBar.addEventListener('click', activateMenuBar);
+
+const closeMenuBar = function () {
+    menuBar.classList.remove("change");
+    sideMenu.classList.remove("active");
+    sideMenu.style.display = 'none';
+};
+
+const toggleMenuBar = function () {
+    if (menuBar.classList.contains("change")) {
+        closeMenuBar();
+    } else {
+        openMenuBar();
+    }
+}
+
+menuBar.addEventListener('click', toggleMenuBar);
+
 
 const openProject = function (projectId) {
     const project = document.getElementById(projectId)
@@ -92,9 +112,6 @@ allSections.forEach(function (section) {
 });
 
 // Scroll to Knowledge-container
-const btnScrollTo = document.querySelector('.my-knowledge');
-const knowledgeSection = document.querySelector('.coding-text');
-
 btnScrollTo.addEventListener('click', function (e) {
     const knowledgeCoords = knowledgeSection.getBoundingClientRect();
 
@@ -104,6 +121,8 @@ btnScrollTo.addEventListener('click', function (e) {
         behavior: 'smooth'
     });
 });
+
+btnScrollTo.addEventListener('click', closeMenuBar);
 
 //Page 1 Toggler
 const toggleText = {
@@ -143,7 +162,7 @@ const toggleText = {
     }
 }
 
-const portfolioBy = document.querySelector('.portfolioByClass');
+const portfolioBy = document.getElementById('portfolioBy');
 
 const webDeveloperTitle = document.getElementById('webDeveloper');
 const aboutMe = document.getElementById('aboutMe');

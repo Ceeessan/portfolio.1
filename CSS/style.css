@@ -18,9 +18,9 @@
     background: var(--light-background);
     background: linear-gradient(
         0deg,
-        rgba(255, 252, 252, 1) 20%,
-        rgb(195, 198, 199) 70%,
-        rgb(142, 142, 143) 92%
+        rgb(197, 193, 193) 20%,
+        rgb(145, 146, 147) 70%,
+        rgb(119, 119, 119) 92%
     );
 } 
 
@@ -35,36 +35,99 @@ header .header-background{
     justify-content: space-between;
 }
 
-header .made-by-div{
-    display:flex;
-    flex-direction: column; 
-}
-
 header #portfolioBy{
     color: var(--secondary-color);
     font-family: Dancing Script, Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+header .my-name{
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
     line-height: 4rem;
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    margin-left: 2.5rem;
+    text-decoration:none;
 }
 
 header .buttons-header-div{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 50%;
-    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;  
+}
+header button{
+    margin: 1rem;
 }
 
 .menu-content{
     display:flex;
     flex-direction: row;
+    display:block;
+}
+
+header #competence{
+    height: 2rem;
+    width: 7rem;
+    color: var(--primary-color);
+    background-color: rgb(142, 142, 143);
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+    transition: font-size 0.3s ease, width 0.3s ease;
+    cursor:pointer;
+}
+
+header #competence:hover{
+    width: 7.8rem;
+    height: 2.2rem;
+    background: var(--light-background);
+}
+
+header .cvBtn{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:2rem;
+    width:7rem;
+    font-size:14px;
+    border-radius:2px;
+    transition: font-size 0.3s ease, width 0.3s ease;
+    border: 1px solid var(--primary-color);
+    background-color: rgb(142, 142, 143);
+}
+
+header .cvBtn a {
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+header .cvBtn:hover{
+    font-size:16px;
+    width: 7.8rem;
+    background: var(--light-background);
+}
+
+header #languageToggler{
+    height: 2rem;
+    width: 7rem;
+    color: var(--primary-color);
+    background-color: rgb(142, 142, 143);
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+    cursor:pointer;
+    transition: font-size 0.3s ease, width 0.3s ease;
+}
+
+header #languageToggler:hover{
+    font-size:16px;
+    width: 7.8rem;
+    background: var(--light-background);
 }
 
 header #menuBarId{
     display:none;
-    cursor:pointer;
-    height: 2rem;
 }
 
 header .bar1, .bar2, .bar3 {
@@ -85,68 +148,6 @@ header .change .bar2 {
   
 header .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-}
-
-header .my-name{
-    font-family: Dancing Script, Arial, Helvetica, sans-serif;
-    line-height: 4rem;
-    font-size: 4.5rem;
-    color: var(--primary-color);
-    margin-left: 2.5rem;
-    text-decoration:none;
-}
-
-header #competence{
-    height: 2rem;
-    width: 7rem;
-    color: var(--primary-color);
-    background-color: rgb(142, 142, 143);
-    border: 1px solid var(--primary-color);
-    border-radius: 2px;
-    transition: font-size 0.3s ease, width 0.3s ease;
-}
-
-header #competence:hover{
-    width: 7.8rem;
-    height: 2.2rem;
-    background: var(--light-background);
-}
-
-header a#cv{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    height:2rem;
-    width:7rem;
-    color:var(--primary-color);
-    font-size:14px;
-    text-decoration:none;
-    border: 1px solid var(--primary-color);
-    background-color: rgb(142, 142, 143);
-    border-radius:2px;
-    transition: font-size 0.3s ease, width 0.3s ease;
-}
-
-header a#cv:hover{
-    font-size:16px;
-    width: 7.8rem;
-    background: var(--light-background);
-}
-
-header #languageToggler{
-    height: 2rem;
-    width: 7rem;
-    color: var(--primary-color);
-    background-color: rgb(142, 142, 143);
-    border: 1px solid var(--primary-color);
-    border-radius: 2px;
-    transition: font-size 0.3s ease, width 0.3s ease;
-}
-
-header #languageToggler:hover{
-    font-size:16px;
-    width: 7.8rem;
-    background: var(--light-background);
 }
 
 main .image-title-container{
@@ -488,18 +489,57 @@ footer a.email-me{
         width: 100%;
     }
 
-    .menu-content {
+    header .side-menu {
         display: none; 
+        position: fixed;
+        top: 0;
+        right: 0; 
+        width: 100%;
+        height: 100%;
+        background-color: rgba(59, 59, 59, 0.9); 
+        z-index: 998; 
+        
+
+    }
+
+    header .side-menu.active {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .overlay-for-menu-bar {
+        position: fixed; 
+        top: 0;
+        left: 0; 
+        background-color: rgba(78, 78, 78, 0.8); 
+        display: none; 
+        z-index: 998; 
+    }
+    
+   
+    .side-menu.active ~ .overlay-for-menu-bar {
+        display: block; 
     }
 
     header #menuBarId{
         display:inline-block;
-        margin-left: 2.7rem;
-        margin-top: 0.5rem;
+        padding-right: 2rem;
+        cursor: pointer;
+        position:fixed;
+        top: 1rem;
+        right: 2rem;
+        z-index: 1000; 
+        
     }
 
+    header .bar1, .bar2, .bar3 {
+        background-color: white;
+        box-shadow: 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.7);
+    }
 
-    .togglerDiv{
+    header .togglerDiv{
         margin-left: 0rem;
         margin-top: 3rem;
     }
