@@ -11,17 +11,16 @@
     --light-background: rgb(158, 154, 154);
 }
 
- body {
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(255, 252, 252);
+    background: var(--light-background);
     position: relative;
-    line-height: 1.4rem;
-    background: rgb(255, 252, 252);
+    background: var(--light-background);
     background: linear-gradient(
         0deg,
-        rgba(255, 252, 252, 1) 20%,
-        rgb(195, 198, 199) 70%,
-        rgb(142, 142, 143) 92%
+        rgb(197, 193, 193) 20%,
+        rgb(145, 146, 147) 70%,
+        rgb(119, 119, 119) 92%
     );
 } 
 
@@ -30,11 +29,18 @@ header{
     height: 15rem;
 }
 
+header .header-background{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 header #portfolioByAboutMe{
     color: var(--secondary-color);
     font-family: Dancing Script, Arial, Helvetica, sans-serif;
-    padding-left: 1rem;
-    line-height: 4rem;
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
 }
 
 header .my-name{
@@ -48,29 +54,35 @@ header .my-name{
 }
 
 header .my-name:hover{
-    color:white;
-    font-size: 4.5rem;
+    color:rgb(32, 105, 154);
+    font-size: 4.05rem;
 }
 
 .togglerDiv{
-    text-align: right; 
-    margin-left: 80rem;
+    padding-top:2rem;
+    padding-right:2rem;
 }
 
-#languageToggler{
-    margin-left: 2rem;
-    margin-top: 0.5rem;
+header #languageToggler{
     height: 2rem;
-    width: 4rem;
+    width: 6rem;
+    font-size: 12px;
     color: var(--primary-color);
-    border: none;
+    background-color: rgb(119, 119, 119);
+    border: 1px solid var(--primary-color);
     border-radius: 2px;
+    cursor:pointer;
     transition: font-size 0.3s ease, width 0.3s ease;
+}
+
+header #languageToggler:hover{
+    width: 6.3rem;
+    font-size: 13px;
 }
 
 main .about-me-container{
     margin:auto;
-    margin-top:6rem;
+    margin-top:2rem;
     margin-bottom: 4rem;
     display:flex;
     justify-content:center;
@@ -198,15 +210,6 @@ footer a.email-me{
         height:10rem;
         width: 100%;
     }
-
-    header .my-name{
-        font-size: 3rem;
-    }
-
-    header .my-name:hover{
-        color:white;
-        font-size: 3.8rem;
-    }
     
     .togglerDiv{ 
         margin-top: 2rem;
@@ -216,6 +219,7 @@ footer a.email-me{
 
     main .about-me-container{
         width: 20rem;
-        padding:2rem
+        padding-top:3rem;
+        padding:2rem;    
     }
 }

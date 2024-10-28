@@ -7,7 +7,7 @@
 :root{
     --secondary-color: rgb(29, 97, 104);
     --dark-color:  #222222;
-    --primary-color: rgb(27, 89, 131);
+    --primary-color: rgb(24, 75, 109);
     --light-background: rgb(158, 154, 154);
 }
 
@@ -52,28 +52,25 @@ header .my-name{
     text-decoration:none;
 }
 
-header .buttons-header-div{
+.side-menu-wrapper{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  
+    align-items: center;
+    padding-top:2rem;
+    padding-right: 2rem;
 }
 
 header button{
-    margin: 1rem;
+    margin: 0.4rem;
 }
 
-.menu-content{
-    display:flex;
-    flex-direction: row;
-    display:block;
-}
 
 header #competence{
-    height: 2.2rem;
-    width: 7rem;
+    height: 2rem;
+    width: 6rem;
+    font-size:12px;
     color: var(--primary-color);
-    background-color: rgb(142, 142, 143);
+    background-color: rgb(119, 119, 119);
     border: 1px solid var(--primary-color);
     border-radius: 2px;
     transition: font-size 0.3s ease, width 0.3s ease;
@@ -81,9 +78,8 @@ header #competence{
 }
 
 header #competence:hover{
-    width: 7.8rem;
-    height: 2.2rem;
-    background: var(--light-background);
+    width: 6.3rem;
+    font-size:13px;
 }
 
 header .cvBtn{
@@ -91,12 +87,12 @@ header .cvBtn{
     justify-content: center;
     align-items:center;
     height:2rem;
-    width:7rem;
-    font-size:14px;
+    width:6rem;
+    font-size:12px;
     border-radius:2px;
     transition: font-size 0.3s ease, width 0.3s ease;
     border: 1px solid var(--primary-color);
-    background-color: rgb(142, 142, 143);
+    background-color: rgb(119, 119, 119);
 }
 
 header .cvBtn a {
@@ -105,16 +101,16 @@ header .cvBtn a {
 }
 
 header .cvBtn:hover{
-    font-size:16px;
-    width: 7.8rem;
-    background: var(--light-background);
+    width: 6.3rem;
+    font-size:13px;
 }
 
 header #languageToggler{
     height: 2rem;
-    width: 7rem;
+    width: 6rem;
+    font-size: 12px;
     color: var(--primary-color);
-    background-color: rgb(142, 142, 143);
+    background-color: rgb(119, 119, 119);
     border: 1px solid var(--primary-color);
     border-radius: 2px;
     cursor:pointer;
@@ -122,9 +118,8 @@ header #languageToggler{
 }
 
 header #languageToggler:hover{
-    font-size:16px;
-    width: 7.8rem;
-    background: var(--light-background);
+    width: 6.3rem;
+    font-size: 13px;
 }
 
 header #menuBarId{
@@ -501,8 +496,6 @@ footer a.email-me{
 
     header .side-menu.active {
         display: block;
-        /* width: 100%;
-        height: 100%; */
     }
 
     header .side-menu-wrapper{
