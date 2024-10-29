@@ -52,7 +52,7 @@ header .my-name{
     text-decoration:none;
 }
 
-.side-menu-wrapper{
+header .side-menu-wrapper{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -151,12 +151,12 @@ main .image-title-container{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 main img.portrait{
-    width: 22rem;
-    height: 28rem;
+    width: 18rem;
+    height: 23rem;
     box-shadow: 10px 5px 10px  black;
 }
 
@@ -168,7 +168,7 @@ main .image-title-container #webDeveloper{
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: var(--dark-color);
     line-height: 4rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
   
 }
 
@@ -185,7 +185,7 @@ main .image-title-container #aboutMe{
     padding-bottom:1rem;
     padding-left: 0.5rem;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size:2rem;
+    font-size:1.8rem;
     color: var(--dark-color);
     transition: color 0.3s ease, font-size 0.3s ease;
     line-height: 5rem;
@@ -193,31 +193,22 @@ main .image-title-container #aboutMe{
 
 main .image-title-container #aboutMe:hover{
     color: var(--primary-color);
-    font-size: 2.2rem;
+    font-size: 1.9rem;
 }
 
 main #myProjectsText{  
     text-align:center;
     margin:auto;
-    margin-top: 12rem;
-    margin-bottom: -4rem;
-}
-
-main .button-project-div{
-    margin-top: 6rem;
-    display: flex;
-    align-items: flex-start; 
-    justify-content: center; 
-    margin-bottom:8rem;
+    margin-top: 10rem;
+    margin-bottom: -3rem;
 }
 
 main .show-project{
-    width:8rem;
+    width:100%;
     height:10rem;
     margin-top: 2rem;
-    margin-bottom: 100px;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
-    font-weight: bold;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     padding: 1rem;
     border: none;
@@ -225,7 +216,7 @@ main .show-project{
     transition: background-color 0.3s ease;
     color: rgb(234, 234, 234);
     border-radius: 0.3rem;
-    margin: 1rem;
+    margin: 0.5rem;
     cursor:pointer;
     opacity: 0;
     transform: translateY(20px);
@@ -258,15 +249,14 @@ main .project{
     transform: translate(-50%, -50%);
     width: 50%;
     margin-top: -15rem;
-
-    background-color: var(--light-background);
+    background-color: rgb(159, 159, 159);
     padding: 3rem;
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
     z-index: 10;
 }
 
- main .close-project1{
+ main .close-project1, .close-project2, .close-project3, .close-project4{
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -274,40 +264,16 @@ main .project{
     color: rgb(40, 40, 40);
     cursor: pointer;
     border: none;
-    background-color: var(--light-background); 
+    background-color: rgb(159, 159, 159);
  }
 
- main .close-project2{
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size : 3rem;
-    color: rgb(40, 40, 40);
-    cursor: pointer;
-    border: none;
-    background-color: var(--light-background); 
- }
- main .close-project3{
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size : 3rem;
-    color: rgb(40, 40, 40);
-    cursor: pointer;
-    border: none;
-    background-color: var(--light-background); 
- }
-
- main .close-project4{
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size : 3rem;
-    color: rgb(40, 40, 40);
-    cursor: pointer;
-    border: none;
-    background-color: var(--light-background);   
- }
+ main .button-project-div{
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    margin-bottom:8rem;
+}
 
  main .github-icon{
     font-size:1.5rem;
@@ -338,7 +304,7 @@ main .description-text{
 
 main .link-to-project{
     color: var(--dark-color);
-    text-decoration: underline overline var(--dark-color);
+    padding-bottom:0.2rem;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     transition: color 0.3s ease;
 }
