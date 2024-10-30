@@ -15,6 +15,7 @@ const btnCloseProjectWindow2 = document.querySelector('.close-project2');
 const btnCloseProjectWindow3 = document.querySelector('.close-project3');
 const btnCloseProjectWindow4 = document.querySelector('.close-project4');
 
+
 const openMenuBar = function () {
     menuBar.classList.add("change");
     sideMenu.classList.add("active");
