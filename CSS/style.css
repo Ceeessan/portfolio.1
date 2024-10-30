@@ -5,9 +5,9 @@
 }
 
 :root{
-    --secondary-color: rgb(29, 97, 104);
+    --secondary-color: #2D3E4E;
     --dark-color:  #222222;
-    --primary-color: rgb(24, 75, 109);
+    --primary-color:  #8CBDB9;
     --light-background: rgb(158, 154, 154);
 }
 
@@ -19,8 +19,8 @@
     background: linear-gradient(
         0deg,
         rgb(197, 193, 193) 20%,
-        rgb(145, 146, 147) 70%,
-        rgb(119, 119, 119) 92%
+        rgb(124, 131, 138) 70%,
+        rgb(73, 74, 76) 92%
     );
 } 
 
@@ -70,7 +70,7 @@ header #competence{
     width: 6rem;
     font-size:12px;
     color: var(--primary-color);
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(73, 74, 76);
     border: 1px solid var(--primary-color);
     border-radius: 2px;
     transition: font-size 0.3s ease, width 0.3s ease;
@@ -92,7 +92,7 @@ header .cvBtn{
     border-radius:2px;
     transition: font-size 0.3s ease, width 0.3s ease;
     border: 1px solid var(--primary-color);
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(73, 74, 76);
 }
 
 header .cvBtn a {
@@ -110,7 +110,7 @@ header #languageToggler{
     width: 6rem;
     font-size: 12px;
     color: var(--primary-color);
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(73, 74, 76);
     border: 1px solid var(--primary-color);
     border-radius: 2px;
     cursor:pointer;
