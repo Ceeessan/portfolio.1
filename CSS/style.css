@@ -19,8 +19,8 @@
     background: linear-gradient(
         0deg,
         rgb(197, 193, 193) 20%,
-        rgb(124, 131, 138) 70%,
-        rgb(73, 74, 76) 92%
+        rgb(147, 145, 141) 70%,
+        rgb(95, 94, 90) 92%
     );
 } 
 
@@ -156,7 +156,7 @@ main .image-title-container{
 
 main img.portrait{
     width: 18rem;
-    height: 23rem;
+    height: 20rem;
     box-shadow: 10px 5px 10px  black;
 }
 
@@ -178,8 +178,8 @@ main .about-me-container{
 }
 
 main .image-title-container #aboutMe{
-    margin-left: 2rem;
-    margin-right: -2rem;
+    margin-left: 1rem;
+    margin-right: -1.4rem;
     border-right: 1px solid var(--dark-color);
     border-bottom: 1px solid var(--dark-color);
     padding-bottom:1rem;
@@ -328,11 +328,10 @@ main .coding-text{
     width: 18rem;
     height:10rem;
     text-align:center;
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.4em;
     margin:auto;
-    line-height: 1.1rem;
     border-radius:20px;
-
     padding:1rem;
     margin-top: -4rem;    
 }
@@ -350,11 +349,17 @@ main .qoutation-right{
 }
 
 main .knowledge-container{
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    text-align:center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
     gap: 15px;
     padding: 20px;
+    max-width: 80%;
+    align-items:center;
     -webkit-overflow-scrolling: touch; 
 }
 
@@ -392,15 +397,39 @@ main .section--hidden{
 }
 
 main .knowledge-icon{
-    /* width: 70px;  */
     height: 90px;
     border-radius: 5px;
     scroll-snap-align: center;
     transition: transform 0.2s ease-in-out;
 }
 
-.knowledge-icon:hover {
+main .knowledge-icon:hover {
     transform: scale(1.1);
+}
+
+main .what-I-do-now{
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    max-width: 80%;
+
+}
+
+main #nowUpdate{
+    margin:auto;
+    max-width: 25%;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+main #textUpdate{
+    line-height: 1.4em;
+    font-size: 1rem;
 }
 
 footer{
@@ -557,7 +586,7 @@ footer a.email-me{
     }
 
     header .bar1, .bar2, .bar3 {
-        background-color: rgb(242, 242, 242);
+        background-color: rgb(202, 200, 198);
         box-shadow: 0.5px 0.5px 0.8px rgba(255, 255, 255, 0.8);
     }
 
@@ -581,9 +610,8 @@ footer a.email-me{
     }
 
     main .image-title-container #aboutMe{
-        font-size:1.5rem;    
-        text-align:center; 
-        
+        font-size:1.2rem;    
+        text-align:center;   
     }
 
     main #myProjectsText{
@@ -629,5 +657,8 @@ footer a.email-me{
         height:5rem;
     }
 
+    main #nowUpdate{
+        max-width: 40%;
+    }
 
 }

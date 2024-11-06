@@ -142,7 +142,9 @@ const toggleText = {
         project4Name: "WordPress - Sammarbete med annan utvecklare",
         project4Desc: "Tyvärr är detta projekt inte tillgänligligt online men projektet ligger ute på mitt github.",
         knowledgeText: "Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.",
-        contactMe: "Kontakta mig"
+        contactMe: "Kontakta mig",
+        updateHeader: "Vad gör jag nu?",
+        updateText: "Just nu praktiserar jag på ett fantastiskt företag som heter Dise. Där har jag fått möjligheten att jobba med ett projekt för att lära mig mer om digital signage! Jag håller på att utveckla mitt eget CMS från grunden med Angular för frontent och MongoDB som backend. Projektet kommer att ge mig stor erfarenhet av hela utvecklingsprocessen, inklusive hur man integrerar säkerhetsåtgärder för att göra systemet tryggt och användarvänligt!"
     },
     en: {
         languageToggler: "Swedish",
@@ -159,7 +161,10 @@ const toggleText = {
         project4Name: "Collaboration with another developer on WordPress project",
         project4Desc: "Unfortunately, this project is not available online, but the project is hosted on my GitHub.",
         knowledgeText: "Skills I have. From HTML and CSS to JavaScript, frameworks, and libraries. I also have knowledge in backend development, database management, and collaboration with other coders.",
-        contactMe: "Contact me"
+        contactMe: "Contact me",
+        updateHeader: "What am I doing now?",
+        updateText: "I’m currently interning at an amazing company called Dise, where I’ve had the opportunity to work on a project to learn more about digital signage! I’m developing my own CMS from the ground up, using Angular for the frontend and MongoDB for the backend. This project is giving me valuable experience with the entire development process, including how to implement security measures to make the system safe and user-friendly!"
+
     }
 }
 
@@ -178,6 +183,8 @@ const project4Name = document.getElementById('project4Name');
 const project4Desc = document.getElementById('project4Desc');
 const knowledgeText = document.getElementById('knowledgeText');
 const contactMe = document.getElementById('contactMe');
+const updateHeader = document.getElementById('nowUpdate');
+const updateText = document.getElementById('textUpdate');
 
 const togglerButton = document.querySelector('.languageTogglerButton');
 let currentLanguage = 'en';
@@ -200,6 +207,8 @@ function switchLanguage() {
     project4Desc.textContent = toggleText[currentLanguage].project4Desc;
     knowledgeText.textContent = toggleText[currentLanguage].knowledgeText;
     contactMe.textContent = toggleText[currentLanguage].contactMe;
+    updateHeader.textContent = toggleText[currentLanguage].updateHeader;
+    updateText.textContent = toggleText[currentLanguage].updateText;
 }
 
 function initializeLanguage() {
