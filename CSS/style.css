@@ -555,6 +555,7 @@ footer a.email-me{
     main .image-title-container #aboutMe{
         font-size:1.2rem;    
         text-align:center;   
+        margin-left: 1rem;
     }
 
     main #myProjectsText{
@@ -590,7 +591,6 @@ footer a.email-me{
     }
 
     main #textUpdate{
-        width: 100%;
         width: 80%;
     }
 
