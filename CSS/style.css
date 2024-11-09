@@ -286,7 +286,7 @@ main .overlay{
 
 main .knowledge-section {
     position: relative;
-    background-image: url('images/computer.jpg'); 
+    background-image: url('../images/computer.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -404,7 +404,7 @@ main #textUpdate{
     margin: auto;
     line-height: 1.4em;
     font-size: 1rem;
-    max-width: 40%;
+    width: 40%;
     color: rgb(228, 227, 227);
 }
 
@@ -586,8 +586,12 @@ footer a.email-me{
     }
 
     main #nowUpdate{
-        max-width: 80%;
+        max-width: 40%;
+    }
 
+    main #textUpdate{
+        width: 100%;
+        width: 80%;
     }
 
 }
