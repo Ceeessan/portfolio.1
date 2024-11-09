@@ -286,7 +286,7 @@ main .overlay{
 
 main .knowledge-section {
     position: relative;
-    background-image: url('./images/computer.jpg'); 
+    background-image: url('images/computer.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
