@@ -408,6 +408,10 @@ main #textUpdate{
     color: rgb(228, 227, 227);
 }
 
+#githubLink{
+    color: rgb(228, 227, 227);
+}
+
 footer{
     margin: auto; 
     width: 100%;
