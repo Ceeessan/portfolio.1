@@ -144,7 +144,7 @@ const toggleText = {
         knowledgeText: "Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.",
         contactMe: "Kontakta mig",
         updateHeader: "Vad gör jag nu?",
-        updateText: "Just nu praktiserar jag på ett fantastiskt företag som heter Dise. Där har jag fått möjligheten att jobba med ett projekt för att lära mig mer om digital signage! Jag utvecklar då mitt eget CMS från grunden med Angular för frontent och MongoDB som backend. Projektet kommer att ge mig stor erfarenhet av hela utvecklingsprocessen, inklusive hur man integrerar säkerhetsåtgärder för att göra systemet tryggt och användarvänligt. Jag har till exempel lärt mig hur man använder token-baserad autentisering för säker åtkomst och hur man hanterar filnedladdningar till databasen på ett säkert sätt. För att se mitt senaste projekt kan du hämta det från: "
+        updateText: "Jag har precis blivit klar med min praktik på ett företag som heter Dise. Där fick jag möjligheten att jobba med ett projekt för att lära mig mer om digital signage! Jag utvecklade mitt eget CMS från grunden med Angular för frontent och MongoDB som backend. Projektet har gett mig stor erfarenhet av hela utvecklingsprocessen, inklusive hur man integrerar säkerhetsåtgärder för att göra systemet tryggt och användarvänligt. Jag har till exempel lärt mig hur man använder token-baserad autentisering för säker åtkomst och hur man hanterar filnedladdningar till databasen på ett säkert sätt. För att se mitt senaste projekt kan du hämta det från: "
     },
     en: {
         languageToggler: "Swedish",
@@ -163,7 +163,7 @@ const toggleText = {
         knowledgeText: "Skills I have. From HTML and CSS to JavaScript, frameworks, and libraries. I also have knowledge in backend development, database management, and collaboration with other coders.",
         contactMe: "Contact me",
         updateHeader: "What am I doing now?",
-        updateText: "I’m currently interning at an amazing company called Dise, where I’ve had the opportunity to work on a project to learn more about digital signage! I’m developing my own CMS from the ground up, using Angular for the frontend and MongoDB for the backend. This project is giving me valuable experience with the entire development process, including how to implement security measures to make the system safe and user-friendly! For example, I have learned how to use token-based authentication for secure access and how to manage file downloads to the database securely.To see my latest project, you can find it here: "
+        updateText: "I just finished my internship at a company called Dise. There, I had the opportunity to work on a project to learn more about digital signage! I developed my own CMS from scratch using Angular for the frontend and MongoDB for the backend. The project gave me extensive experience with the entire development process, including how to integrate security measures to make the system secure and user-friendly. For example, I learned how to implement token-based authentication for secure access and how to handle file downloads to the database in a safe manner. To see my latest project, you can download it from: "
 
     }
 }
