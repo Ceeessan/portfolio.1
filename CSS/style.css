@@ -290,7 +290,7 @@ main .knowledge-section {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 30rem;
+    height: 31rem;
     padding-top: 11rem;
     color: #f2f2f2;
 }
@@ -327,6 +327,7 @@ main .knowledge-container{
     display:flex;
     justify-content: flex-start;
     align-items:center;
+    text-align:center;
     margin:auto;
     margin-top: 4rem;
     overflow-x: auto;
@@ -336,12 +337,21 @@ main .knowledge-container{
     -webkit-overflow-scrolling: touch; 
 }
 
+main .knowledge-container .icon-text{
+    padding-top: 0.2rem;
+}
+
 main .knowledge-icon{
     display: flex;
     gap: 15px;
     margin-left: 0;
     width: 6em;
     height:6rem;
+    background-color:rgb(36, 36, 36);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
+            -4px -4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding:0.5rem;
 }
 
 main .knowledge-container::-webkit-scrollbar {
@@ -582,6 +592,7 @@ footer a.email-me{
     main .project{
         width: 70%;
         padding: 3rem;
+        
     }
 
     main .knowledge-icon{
