@@ -65,13 +65,15 @@
             <img src="images/me.jpg" alt="portrait" class="portrait">
         <div class="about-me-container">
             <h3 id="webDeveloper">Jag är Webbutvecklare</h3>
-            <a id="aboutMe" href="about-me.html">Om mig</a>
+            <button class="about-me-btn">
+                <a id="aboutMe" href="about-me.html">Om mig</a>
+            </button>
         </div>  
         </div>
 
         <h1 id="myProjectsText">Mina Projekt </h1>
             <div class="button-project-div">
-                <button class="show-project" data-target="project1">Restaurant-HTML/CSS
+                <button class="show-project" data-target="project1">Restaurant-HTML/CSS/JS
                 </button>
 
                 <button class="show-project" data-target="project2">Guess my number-Game
@@ -88,10 +90,18 @@
             <div class="project hidden" id="project1">
                 <button class="close-project1">&times;</button>
 
-                <img src="images/Skärmbild 2024-02-23 193347.png" alt="guess_my_number" class="guess-number">
-                <p class="project-name">PoP Restaurant-HTML/CSS</p>
+                <img src="images/restaurang-page.png" alt="guess_my_number" class="guess-number">
+                <p class="project-name">Taste Restaurang</p>
+
+                <ul>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Available in mobile-view</li>
+                    <li>Component-based header and footer</li>
+                    <li>Made in March 2025</li>
+
+                </ul>
             
-                <a href="https://ceeessan.github.io/gammal-uppgift-2-ok/bokabord.html" target="_blank" class="link-to-project" id="project1Open">Öppna projekt</a>
+                <a href="https://ceeessan.github.io/restaurant-page/////index.html" target="_blank" class="link-to-project" id="project1Open">Se projektet</a>
             </div>
             <div class="overlay hidden"> </div>
 
@@ -102,7 +112,13 @@
                 <img src="images/project_numberGame.png" alt="guess_my_number" class="guess-number">
                 <p class="project-name">Guess my number - Game</p>
 
-                <a href="https://ceeessan.github.io/guess-number-game/" target="_blank" class="link-to-project" id="project2Open">Öppna projekt</a>
+                <ul>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Available in mobile-view</li>
+                    <li>Easy and fun game</li>
+                </ul>
+
+                <a href="https://ceeessan.github.io/guess-number-game/" target="_blank" class="link-to-project" id="project2Open">Se projektet</a>
             </div>          
 
             <!-- knapp 3 -->
@@ -112,8 +128,14 @@
                 <img src="images/openweather.png" alt="guess_my_number" class="guess-number">
 
                 <p class="project-name">Open Weather App - with API</p>
-                <p class="description-text" id="project3Desc"> Ett projekt där vi nyttjat oss av API:er.</p>
-                <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project" id="project3Open">Öppna projekt</a>
+
+                <ul>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Available in mobile-view</li>
+                    <li>A project created with API</li>
+                </ul>
+                
+                <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project" id="project3Open">Se projektet</a>
             </div>
 
             <!-- knapp 4 -->
@@ -122,8 +144,14 @@
 
                 <img src="images/wordpress-project.png" alt="guess_my_number" class="guess-number">
 
-                <p class="project-name" id="project4Name">WordPress - Sammarbete med annan utvecklare</p>
-                <p class="description-text" id="project4Desc"> Tyvärr är detta projekt inte tillgänligligt online men projektet ligger ute på mitt github.</p>
+                <p class="project-name" id="project4Name">WordPress</p>
+
+                <ul>
+                    <li>Wordpress, Woocommerce</li>
+                    <li>Created with another Developer</li>
+                    <li>Available in Github</li>
+                </ul>
+    
                 <a href="https://github.com/Ceeessan/moody_studio.git" target="_blank" class="link-to-project github-icon">
                 <i class="fa fa-github"></i>
                 </a>
@@ -131,10 +159,7 @@
 
             <div class="knowledge-section">
                 <p class="coding-text section section--visible" id="knowledgeText"> 
-                    <span class="qoutation-left">"</span>
-                        Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.
-                    <span class="qoutation-right">"</span> 
-                </p>    
+                    Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.</p>    
     
                 <div class="knowledge-container section section--visible">
                     <div class="knowledge-scroll">

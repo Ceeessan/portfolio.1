@@ -5,22 +5,19 @@
 }
 
 :root{
-    --secondary-color: #8CBDB9;
+    --secondary-color: #bda68c;
     --dark-color:  #222222;
-    --primary-color:  #364b5f;
+    --primary-color:  #423c28;
     --light-background: rgb(158, 154, 154);
 }
 
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     position: relative;
-    background: var(--light-background);
-    background: var(--light-background);
-    background: linear-gradient(
-        0deg,
-        rgb(177, 173, 173) 20%,
-        rgb(118, 116, 110) 70%
-    );
+    background-image: url('/images/texture-img.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 } 
 
 header{
@@ -64,18 +61,18 @@ header .togglerDiv{
 
 header #languageToggler{
     height: 2rem;
-    width: 5.5rem;
-    font-size: 0.8rem;
+    width: 6rem;
+    font-size:0.8rem;
     color: var(--primary-color);
-    background-color: rgb(118, 116, 110);
-    border: 1px solid var(--primary-color);
-    border-radius: 2px;
-    cursor:pointer;
+    background-color:none;
+    border: none;
+    border-radius: 0.1rem;
     transition: font-size 0.3s ease, width 0.3s ease;
+    cursor:pointer;
 }
 
 header #languageToggler:hover{
-    width: 5.8rem;
+    width: 6.2rem;
     font-size: 13px;
 }
 

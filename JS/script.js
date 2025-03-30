@@ -135,12 +135,9 @@ const toggleText = {
         cv: "Ladda ner CV",
         competence: "Kompetens",
         myProjectsText: "Mina Projekt",
-        project1Open: "Öppna Projekt",
-        project2Open: "Öppna Projekt",
-        project3Desc: "Ett projekt där vi nyttjat oss av API:er.",
-        project3Open: "Öppna Projekt",
-        project4Name: "WordPress - Sammarbete med annan utvecklare",
-        project4Desc: "Tyvärr är detta projekt inte tillgänligligt online men projektet ligger ute på mitt github.",
+        project1Open: "Se projektet",
+        project2Open: "Se projektet",
+        project3Open: "Se projektet",
         knowledgeText: "Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.",
         contactMe: "Kontakta mig",
         updateHeader: "Vad gör jag nu?",
@@ -154,12 +151,9 @@ const toggleText = {
         cv: "Download CV",
         competence: "Competence",
         myProjectsText: "My Projects",
-        project1Open: "Open Project",
-        project2Open: "Open Project",
-        project3Desc: "A project where we used APIs.",
-        oroject3Open: "Open Project",
-        project4Name: "Collaboration with another developer on WordPress project",
-        project4Desc: "Unfortunately, this project is not available online, but the project is hosted on my GitHub.",
+        project1Open: "See Project",
+        project2Open: "See Project",
+        project3Open: "See Project",
         knowledgeText: "Skills I have. From HTML and CSS to JavaScript, frameworks, and libraries. I also have knowledge in backend development, database management, and collaboration with other coders.",
         contactMe: "Contact me",
         updateHeader: "What am I doing now?",
@@ -177,10 +171,8 @@ const competence = document.getElementById('competence');
 const myProjectsText = document.getElementById('myProjectsText');
 const project1Open = document.getElementById('project1Open');
 const project2Open = document.getElementById('project2Open');
-const project3Desc = document.getElementById('project3Desc');
 const project3Open = document.getElementById('project3Open');
-const project4Name = document.getElementById('project4Name');
-const project4Desc = document.getElementById('project4Desc');
+
 const knowledgeText = document.getElementById('knowledgeText');
 const contactMe = document.getElementById('contactMe');
 const updateHeader = document.getElementById('nowUpdate');
@@ -201,10 +193,7 @@ function switchLanguage() {
     myProjectsText.textContent = toggleText[currentLanguage].myProjectsText;
     project1Open.textContent = toggleText[currentLanguage].project1Open;
     project2Open.textContent = toggleText[currentLanguage].project2Open;
-    project3Desc.textContent = toggleText[currentLanguage].project3Desc;
     project3Open.textContent = toggleText[currentLanguage].project3Open;
-    project4Name.textContent = toggleText[currentLanguage].project4Name;
-    project4Desc.textContent = toggleText[currentLanguage].project4Desc;
     knowledgeText.textContent = toggleText[currentLanguage].knowledgeText;
     contactMe.textContent = toggleText[currentLanguage].contactMe;
     updateHeader.textContent = toggleText[currentLanguage].updateHeader;
@@ -217,3 +206,5 @@ function initializeLanguage() {
 
 togglerButton.addEventListener('click', switchLanguage);
 initializeLanguage();
+
+console.log(updateHeader);
