@@ -605,12 +605,12 @@ footer a.email-me{
 
     main .show-project.show{
         max-width: 35%;
+        font-size: 12px;
     }
 
     main .project{
         width: 70%;
-        padding: 3rem;
-        
+        padding: 3rem;        
     }
 
     main .knowledge-icon{
