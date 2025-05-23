@@ -121,7 +121,7 @@ main .image-title-container{
 
 main img.portrait{
     width: 16rem;
-    height: 16rem;
+    height: auto;
     box-shadow: 10px 5px 10px  black;
 }
 
@@ -134,6 +134,15 @@ main .image-title-container #webDeveloper{
     color: var(--dark-color);
     line-height: 4rem;
     font-size: 3.2rem;
+}
+
+main .image-title-container #webDeveloperText{
+    max-width:30rem;
+    padding-left:3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    letter-spacing:0.5px;
 }
 
 main .about-me-container{
