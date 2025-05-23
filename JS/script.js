@@ -131,6 +131,7 @@ const toggleText = {
         languageToggler: "English",
         portfolioBy: "Portfolio av",
         webDeveloper: "Jag är Webbutvecklare",
+        webDeveloperText: "Jag är webbutvecklare med fokus på fullstack-utveckling för moderna och användarvänliga webbapplikationer.",
         aboutMe: "Om mig",
         cv: "Ladda ner CV",
         competence: "Kompetens",
@@ -147,6 +148,7 @@ const toggleText = {
         languageToggler: "Swedish",
         portfolioBy: "Portfolio by",
         webDeveloper: "I am a Web Developer",
+        webDeveloperText: "I am a web developer focused on fullstack development of modern and user-friendly web applications.",
         aboutMe: "About Me",
         cv: "Download CV",
         competence: "Competence",
@@ -164,6 +166,7 @@ const toggleText = {
 const portfolioBy = document.getElementById('portfolioBy');
 
 const webDeveloperTitle = document.getElementById('webDeveloper');
+const webDeveloperText = document.getElementById('webDeveloperText');
 const aboutMe = document.getElementById('aboutMe');
 const cvDownload = document.getElementById('cv');
 const competence = document.getElementById('competence');
@@ -186,6 +189,7 @@ function switchLanguage() {
     togglerButton.textContent = toggleText[currentLanguage].languageToggler;
     portfolioBy.textContent = toggleText[currentLanguage].portfolioBy;
     webDeveloperTitle.textContent = toggleText[currentLanguage].webDeveloper;
+    webDeveloperText.textContent = toggleText[currentLanguage].webDeveloperText;
     aboutMe.textContent = toggleText[currentLanguage].aboutMe;
     cvDownload.textContent = toggleText[currentLanguage].cv;
     competence.textContent = toggleText[currentLanguage].competence;
