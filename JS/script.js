@@ -139,10 +139,11 @@ const toggleText = {
         project1Open: "Se projektet",
         project2Open: "Se projektet",
         project3Open: "Se projektet",
-        knowledgeText: "Kunskaper jag besitter.  Från HTML och CSS till JavaScript, frameworks och bibliotek. Jag har även kunskap inom backend, databashantering och sammarbete med andra kodare.",
+        knowledgeText: "Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub och har dessutom erfarenhet av WordPress samt Woocommerce.",
         contactMe: "Kontakta mig",
         updateHeader: "Vad gör jag nu?",
-        updateText: "I januari månad blev jag klar med min praktik på ett företag, Dise International AB där jag bland annat fick lära mig att skapa mitt eget CMS med Angular som ramverk, Typescript som frontend samt MongoDB som backend. Projektet har gett mig stor erfarenhet av hela utvecklingsprocessen, inklusive hur man integrerar säkerhetsåtgärder för att göra systemet tryggt och användarvänligt. Jag har till exempel lärt mig hur man använder token-baserad autentisering för säker åtkomst och hur man hanterar filnedladdningar till databasen på ett säkert sätt. Just nu så finslipar jag mina kunskaper med att öva Javascript samt React. Jag har även skapat en restaurang-hemsida som blev färdig i Mars 2025 och är tillgängligt här i mitt portfolio. Jag planerar även att fortsätta utbilda mig och har sökt en del kurser och utbildningar under tiden som jag finslipar på mina kunskaper. Mitt nya projekt kommer att vara en hemsida med Wordpress, därefter så kommer jag att gå tillbaka till Angular och MongoDB för ytterligare ett nytt spännande projekt."
+        updateText1: "I januari 2025 avslutade jag min utbildning, samt min praktik som jag gjorde på Dise International AB. Under praktiken fick jag bland annat bygga ett eget CMS med Angular, Typescript samt Express.js och MongoDB. Projektet gav mig en stor erfarenhet av hela utvecklingsprocessen, till exempel så lärde jag mig att implementera autentisering med JWT och hur man hanterar filnedladdningar till databasen på ett säkert sätt.",
+        updateText2: "Efter utbildningen skapade jag en restauranghemsida som blev färdig i Mars 2025 och finns tillgängligt här i mitt portfolio.Just nu bygger jag ett större projekt med Angular, MongoDB Atlas och Express.js som kommer att publiceras här så småningom. Jag planerar även att fortsätta utbilda mig och har sökt flera kurser undertiden som jag fördjupar mina kunskaper."
     },
     en: {
         languageToggler: "Swedish",
@@ -156,10 +157,11 @@ const toggleText = {
         project1Open: "See Project",
         project2Open: "See Project",
         project3Open: "See Project",
-        knowledgeText: "Skills I have. From HTML and CSS to JavaScript, frameworks, and libraries. I also have knowledge in backend development, database management, and collaboration with other coders.",
+        knowledgeText: "I have experience developing web applications from scratch, both on the frontend and backend. I work with modern technologies such as HTML, CSS, JavaScript, and TypeScript, as well as frameworks like Angular and React. On the backend, I have used Node.js and Express in combination with databases like MongoDB. I’m comfortable working with Git and GitHub, and I also have experience with WordPress and WooCommerce.",
         contactMe: "Contact me",
         updateHeader: "What am I doing now?",
-        updateText: " In January, I completed my internship at a company called Dise International AB, where I learned how to create my own CMS using Angular as the framework, TypeScript for the frontend, and MongoDB for the backend. The project provided me with alot of experience in the entire development process, including how to integrate security measures to make the system secure and user-friendly. For example, I learned how to use token-based authentication for secure access and how to handle file downloads to the database safely.Currently, I am working on my skills by practicing JavaScript and React. I also created a restaurant website, which was completed in March 2025 and is available here in my portfolio. I also plan to continue my education and have applied for several courses and training programs while working on my skills. My next project will be a website built with WordPress, and after that, I plan to return to Angular and MongoDB for another exciting project."
+        updateText1: "In January 2025, I completed my education, along with an internship that I did at Dise International AB. During the internship, I had the opportunity to build my own CMS using Angular, TypeScript, Express.js, and MongoDB. The project gave me valuable experience in the entire development process, for example, I learned how to implement authentication using JWT and how to securely handle file uploads to the database.",
+        updateText2: "After completing my education, I created a restaurant website, which was finished in March 2025 and is available here in my portfolio. I am currently working on a larger project using Angular, MongoDB Atlas, and Express.js, which will be published here shortly. I also plan to continue my education and have applied to several courses while deepening my skills."
     }
 }
 
@@ -178,7 +180,8 @@ const project3Open = document.getElementById('project3Open');
 const knowledgeText = document.getElementById('knowledgeText');
 const contactMe = document.getElementById('contactMe');
 const updateHeader = document.getElementById('nowUpdate');
-const updateText = document.getElementById('textUpdate');
+const updateText1 = document.getElementById('textUpdate1');
+const updateText2 = document.getElementById('textUpdate2');
 
 const togglerButton = document.querySelector('.languageTogglerButton');
 let currentLanguage = 'en';
@@ -200,7 +203,9 @@ function switchLanguage() {
     knowledgeText.textContent = toggleText[currentLanguage].knowledgeText;
     contactMe.textContent = toggleText[currentLanguage].contactMe;
     updateHeader.textContent = toggleText[currentLanguage].updateHeader;
-    updateText.textContent = toggleText[currentLanguage].updateText;
+    updateText1.textContent = toggleText[currentLanguage].updateText1;
+    updateText2.textContent = toggleText[currentLanguage].updateText2;
+
 }
 
 function initializeLanguage() {
