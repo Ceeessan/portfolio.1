@@ -12,28 +12,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 <body>
     <header>
         <div class="header-background">
             <div class="made-by-div">
-                <h4 id="portfolioBy"> Portfolio av</h4>
-                <h1 class="my-name"> Cecilia Carlsen</h1>
+                <h4 id="portfolioBy" class="section"> Portfolio av</h4>
+                <h1 class="my-name section"> Cecilia Carlsen</h1>
             </div>
 
             <div class="buttons-header-div"> 
-                <div  id="menuBarId" >
-                    <div class="bar1" class="menuBar open"></div>
-                    <div class="bar2" class="menuBar open"></div>
-                    <div class="bar3" class="menuBar open"></div>
+                <div id="menuBarId" >
+                    <div class="bar1 menuBar open"></div>
+                    <div class="bar2 menuBar open"></div>
+                    <div class="bar3 menuBar open"></div>
                 </div>
                 
                 <div class="side-menu">
@@ -61,19 +60,21 @@
     <div class="overlay-for-menu-bar"></div>
 
     <main>
-        <div class="image-title-container">
-            <img src="images/me.jpg" alt="portrait" class="portrait">
+        <div class="image-title-container section">
+            <figure >
+                <img src="images/me.jpg" alt="portrait of Cecilia" class="portrait ">
+            </figure>
         <div class="about-me-container">
-            <h3 id="webDeveloper">Jag är Webbutvecklare</h3>
-            <p id="webDeveloperText">Jag är webbutvecklare med fokus på fullstack-utveckling för moderna och användarvänliga webbapplikationer.</p>
+            <h3 id="webDeveloper">Jag är Webbutvecklare...</h3>
+            <p id="webDeveloperText">med fokus på fullstack-utveckling för moderna och användarvänliga webbapplikationer.</p>
             <button class="about-me-btn">
                 <a id="aboutMe" href="about-me.html">Om mig</a>
             </button>
         </div>  
         </div>
 
-        <h1 id="myProjectsText">Mina Projekt </h1>
-            <div class="button-project-div">
+        <h1 id="myProjectsText" class="section">Mina Projekt </h1>
+            <div class="button-project-div section">
                 <button class="show-project" data-target="project1">Restaurant
                 </button>
 
@@ -90,8 +91,9 @@
             <!-- knapp 1 -->
             <div class="project hidden" id="project1">
                 <button class="close-project1">&times;</button>
-
-                <img src="images/restaurang-page.png" alt="guess_my_number" class="guess-number">
+                <figure>
+                    <img src="images/restaurang-page.png" alt="guess_my_number game project" class="guess-number">
+                </figure>
                 <p class="project-name">Taste Restaurang</p>
 
                 <ul>
@@ -99,8 +101,6 @@
                     <li>Available in mobile-view</li>
                     <li>Completed in March 2025</li>
                     <li>Component-based header and footer</li>
-                    
-
                 </ul>
             
                 <a href="https://ceeessan.github.io/restaurant-page/////index.html" target="_blank" class="link-to-project" id="project1Open">Se projektet</a>
@@ -110,8 +110,9 @@
             <!-- knapp 2 -->
             <div class="project hidden" id="project2">
                 <button class="close-project2">&times;</button>
-
-                <img src="images/bookMyHair.png" alt="bookMyHair" class="guess-number">
+                <figure>
+                    <img src="images/bookMyHair.png" alt="img of bookMyHair project" class="guess-number">
+                </figure>
                 <p class="project-name">BookMyHair - Hairsalon</p>
 
                 <ul>
@@ -131,9 +132,9 @@
             <!-- knapp 3 -->
             <div class="project hidden" id="project3">
                 <button class="close-project3">&times;</button>
-
-                <img src="images/openweather.png" alt="guess_my_number" class="guess-number">
-
+                <figure>
+                    <img src="images/openweather.png" alt="API project img" class="guess-number">
+                </figure>
                 <p class="project-name">Open Weather App - with API</p>
 
                 <ul>
@@ -141,16 +142,15 @@
                     <li>Available in mobile-view</li>
                     <li>A project created with API</li>
                 </ul>
-                
                 <a href="https://ceeessan.github.io/weather-app/" target="_blank" class="link-to-project" id="project3Open">Se projektet</a>
             </div>
 
             <!-- knapp 4 -->
             <div class="project hidden" id="project4">
                 <button class="close-project4">&times;</button>
-
-                <img src="images/wordpress-project.png" alt="guess_my_number" class="guess-number">
-
+                <figure>
+                    <img src="images/wordpress-project.png" alt="wordpress project img" class="guess-number">
+                </figure>
                 <p class="project-name" id="project4Name">WordPress</p>
 
                 <ul>
@@ -158,118 +158,111 @@
                     <li>Created with another Developer</li>
                     <li>Available in Github</li>
                 </ul>
-    
+
                 <a href="https://github.com/Ceeessan/moody_studio.git" target="_blank" class="link-to-project github-icon">
                 <i class="fa fa-github"></i>
                 </a>
             </div> 
 
-            <div class="knowledge-section">
-                <p class="coding-text section section--visible" id="knowledgeText"> 
-                    Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub och har dessutom erfarenhet av WordPress samt Woocommerce.</p>    
+            <article class="digital-analyst-container">
+                <div>
+                <h1 class="digital-analyst-header">Digital Analys</h1>
+                <p class="digital-analyst-p">Under 2025 började jag arbeta med föreningen Munskänkarna, där jag fick i uppdrag att analysera trafiken på deras webbplats med verktygen Google Analytics 4 (GA4) och Matomo. 
+                Intresset för digital analys har växt och jag har fördjupat mina kunskaper genom att ta ett certifikat för GA4.</p>
+                <a href="" target="_blank" class="analyst-document"> Analys </a>
+                </div>
+                <figure class="analyst-certificate">
+                    <img src="/images/computer.jpg" alt="GA4 certificate">
+                </figure>
+
+
+            </article>
+
+            <section class="knowledge-section">
+                <p class="coding-text section " id="knowledgeText"> 
+                    Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub.</p>    
     
-                <div class="knowledge-container section section--visible">
+                <div class="knowledge-container section ">
                     <div class="knowledge-scroll">
-                        <div >
-                            <img src="images/html.svg" alt="html" id="html" class="knowledge-icon">
+                        <figure>
+                            <img src="images/html.svg" alt="html icon" id="html" class="knowledge-icon">
                             <p class="icon-text">HTML5</p>
-                        </div>
-                        <div>
-                            <img src="images/css.svg" alt="css" id="css" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/css.svg" alt="css icon" id="css" class="knowledge-icon">
                             <p class="icon-text">CSS</p>
-                        </div>
-                        <div>
-                            <img src="images/js.svg" alt="js" id="js" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/js.svg" alt="js icon" id="js" class="knowledge-icon">
                             <p class="icon-text">Javascript</p>
-                        </div>
-                        <div>
-                            <img src="images/typescript.svg" alt="typescript" id="typescript" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/typescript.svg" alt="typescript icon" id="typescript" class="knowledge-icon">
                             <p class="icon-text">Typescript</p>
-                        </div>
-                        <div>
-                            <img src="images/angular.svg" alt="angular" id="angular" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/angular.svg" alt="angular icon" id="angular" class="knowledge-icon">
                             <p class="icon-text">Angular</p>
-                        </div>
-                        <div>
-                            <img src="images/react.svg" alt="react" id="react" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/react.svg" alt="react icon" id="react" class="knowledge-icon">
                             <p class="icon-text">React</p>
-                        </div>
-                        <div>
-                            <img src="images/git.svg" alt="git" id="git" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/git.svg" alt="git icon" id="git" class="knowledge-icon">
                             <p class="icon-text">Git</p>
-                        </div>
-                        <div>
-                            <img src="images/github.svg" alt="github" id="github" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/github.svg" alt="github icon" id="github" class="knowledge-icon">
                             <p class="icon-text">Github</p>
-                        </div>
-                        <div>
-                            <img src="images/sass.png" alt="sass" id="sass" class="knowledge-icon">
-                            <p class="icon-text">Scss</p>
-                        </div>
-                        <div>
-                            <img src="images/uxui.png" alt="uxui" id="uxui" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/uxui.png" alt="uxui" id="ux-ui icon" class="knowledge-icon">
                             <p class="icon-text">UX/UI</p>
-                        </div>
-                        <div>
-                            <img src="images/nodejs.png" alt="nodejs" id="nodejs" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/nodejs.png" alt="nodejs icon" id="nodejs" class="knowledge-icon">
                             <p class="icon-text">Node JS</p>
-                        </div>
-                        <div>
-                            <img src="images/express.png" alt="expressjs" id="expressjs" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/express.png" alt="expressjs icon" id="expressjs" class="knowledge-icon">
                             <p class="icon-text">Express.js</p>
-                        </div>
-                        <div>
-                            <img src="images/mongodb.svg" alt="mongodb" id="mongodb" class="knowledge-icon">
+                        </figure>
+                        <figure>
+                            <img src="images/mongodb.svg" alt="mongodb icon" id="mongodb" class="knowledge-icon">
                             <p class="icon-text">MongoDB</p>
-                        </div>
-                        <div>
-                            <img src="images/php.png" alt="php" id="php" class="knowledge-icon">
-                            <p class="icon-text">PHP</p>
-                        </div>
-                        <div>
-                            <img src="images/wordpress.svg" alt="wordpress" id="wordpress" class="knowledge-icon">
-                            <p class="icon-text">Wordpress</p>
-                        </div>
-                        <div>
-                            <img src="images/woo.png" alt="woo" id="woocommerce" class="knowledge-icon">
-                            <p class="icon-text">Woocommerce</p>
-                        </div>
+                        </figure>
                     </div>            
                 </div>    
-            </div>
+            </section>
             
-            <div class="what-I-do-now"> 
+            <article class="what-I-do-now section"> 
                 <h2 id="nowUpdate">
                     Vad gör jag nu?
                 </h2>
                 <p id="textUpdate1"> 
-                    I januari 2025 avslutade jag min utbildning, samt min praktik på Dise International AB. Under praktiken byggde jag ett bland annat eget CMS med Angular, Typescript samt Node.js, Express och MongoDB. Projektet gav mig en stor erfarenhet av hela utvecklingsprocessen, till exempel så lärde jag mig att implementera autentisering med JWT och hur man hanterar filnedladdningar till databasen på ett säkert sätt. 
+                    Under 2025 har jag arbetat med två projekt, en restauranghemsida och en frisörhemsida, som båda finns tillgängliga under 'Mina Projekt'. Jag tar även några relevanta kurser, såsom Grundkurs IT, Webbutveckling 1 och Cloud-utveckling. Dessutom har jag haft möjligheten att hjälpa föreningen Munskänkarna med att uppdatera och förbättra deras hemsida. Just nu analyserar jag trafiken på deras webbplats med hjälp av GA4 och Matomo.
                     </p>
-                    <p id="textUpdate2">
-                    Efter utbildningen har jag skapat två projekt, en Restauranghemsida och en Frisörhemsida som finns tillgängliga under "Mina Projekt".
-                    Just nu har jag blivit antagen till några kortare IT-relaterade kurser som jag ska gå och väntar även på svar för några större utbildningar till hösten. Utöver detta ska jag även frilanda och bygga ett portfolio till en kund. 
-                </p>
-            </div> 
+            </article> 
     </main>
 
     <footer>
         <div class="footer-container">
             <h3 class="get-in-touch" id="contactMe">            
-                Kontakta mig 
+                Kontakt 
             </h3>
 
             <a class="linkedin" href="https://www.linkedin.com/in/cecilia-carlsen-567a99264/" target="_blank"> 
-                <i class="fa fa-linkedin" id="linkedin"></i>
+            <i class="fa fa-linkedin" id="linkedin"></i>
             </a>
         <div>
             <a href="https://github.com/Ceeessan" target="_blank" class="link-to-project">
-                <i class="fa fa-github"></i>
+            <i class="fa fa-github"></i>
             </a>
-        </div>
-            
+        </div> 
             <p>
-                <a href="mailto:cessan__94@hotmail.com" class="email-me">Cessan__94@hotmail.com
-                </a>
+            <a href="mailto:cessan__94@hotmail.com" class="email-me">Cessan__94@hotmail.com
+            </a>
             </p>        
         </div>
     </footer> 

@@ -1,3 +1,11 @@
+gsap.from(".section", {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    stagger: 0.3,
+    ease: "power2.out"
+});
+
 const menuBar = document.getElementById('menuBarId');
 const sideMenu = document.querySelector(".side-menu");
 const buttonsHeaderDiv = document.querySelector('.buttons-header-div')
@@ -61,14 +69,8 @@ for (let i = 0; i < btnShowProjectWindow.length; i++) {
 }
 
 btnCloseProjectWindow1.addEventListener('click', closeProject);
-overlay.addEventListener('click', closeProject);
-
 btnCloseProjectWindow2.addEventListener('click', closeProject);
-overlay.addEventListener('click', closeProject);
-
 btnCloseProjectWindow3.addEventListener('click', closeProject);
-overlay.addEventListener('click', closeProject);
-
 btnCloseProjectWindow4.addEventListener('click', closeProject);
 overlay.addEventListener('click', closeProject);
 
@@ -91,29 +93,8 @@ window.addEventListener('scroll', function () {
     });
 });
 
-// Get knowledge-icons & text with Intersection Observer API
-const revealSection = function (entries, observer) {
-    const [entry] = entries;
-    console.log(entry);
-
-    if (!entry.isIntersecting) return;
-
-    entry.target.classList.remove('section--hidden');
-    observer.unobserve(entry.target);
-}
-
-const sectionObserver = new IntersectionObserver(revealSection, {
-    root: null,
-    threshold: 0.35,
-});
-
-allSections.forEach(function (section) {
-    sectionObserver.observe(section);
-    section.classList.add('section--hidden');
-});
-
 // Scroll to Knowledge-container
-btnScrollTo.addEventListener('click', function (e) {
+btnScrollTo.addEventListener('click', function () {
     const knowledgeCoords = knowledgeSection.getBoundingClientRect();
 
     window.scrollTo({
@@ -130,8 +111,8 @@ const toggleText = {
     sv: {
         languageToggler: "English",
         portfolioBy: "Portfolio av",
-        webDeveloper: "Jag är Webbutvecklare",
-        webDeveloperText: "Jag är webbutvecklare med fokus på fullstack-utveckling för moderna och användarvänliga webbapplikationer.",
+        webDeveloper: "Jag är Webbutvecklare...",
+        webDeveloperText: "med fokus på fullstack-utveckling för moderna och användarvänliga webbapplikationer.",
         aboutMe: "Om mig",
         cv: "Ladda ner CV",
         competence: "Kompetens",
@@ -139,17 +120,16 @@ const toggleText = {
         project1Open: "Se projektet",
         project2Open: "Se projektet",
         project3Open: "Se projektet",
-        knowledgeText: "Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub och har dessutom erfarenhet av WordPress samt Woocommerce.",
+        knowledgeText: "Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub.",
         contactMe: "Kontakta mig",
         updateHeader: "Vad gör jag nu?",
-        updateText1: "I januari 2025 avslutade jag min utbildning, samt min praktik på Dise International AB. Under praktiken byggde jag ett bland annat eget CMS med Angular, Typescript samt Node.js, Express och MongoDB. Projektet gav mig en stor erfarenhet av hela utvecklingsprocessen, till exempel så lärde jag mig att implementera autentisering med JWT och hur man hanterar filnedladdningar till databasen på ett säkert sätt.",
-        updateText2: 'Efter utbildningen har jag skapat två projekt, en Restauranghemsida och en Frisörhemsida som finns tillgängliga under "Mina Projekt". Just nu har jag blivit antagen till några kortare IT-relaterade kurser som jag ska gå och väntar även på svar för några större utbildningar till hösten. Utöver detta ska jag även frilanda och bygga ett portfolio till en kund.'
+        updateText1: "Under 2025 har jag arbetat med två projekt, en restauranghemsida och en frisörhemsida, som båda finns tillgängliga under 'Mina Projekt'. Jag tar även några relevanta kurser såsom Grundkurs IT, Webbutveckling 1 och Cloud-utveckling. Dessutom har jag haft möjligheten att hjälpa föreningen Munskänkarna med att uppdatera och förbättra deras hemsida. Just nu analyserar jag trafiken på deras webbplats med hjälp av GA4 och Matomo.",
     },
     en: {
         languageToggler: "Swedish",
         portfolioBy: "Portfolio by",
-        webDeveloper: "I am a Web Developer",
-        webDeveloperText: "I am a web developer focused on fullstack development of modern and user-friendly web applications.",
+        webDeveloper: "I am a Web Developer...",
+        webDeveloperText: "focusing on fullstack development of modern and user-friendly web applications.",
         aboutMe: "About Me",
         cv: "Download CV",
         competence: "Competence",
@@ -157,11 +137,10 @@ const toggleText = {
         project1Open: "See Project",
         project2Open: "See Project",
         project3Open: "See Project",
-        knowledgeText: "I have experience developing web applications from scratch, both on the frontend and backend. I work with modern technologies such as HTML, CSS, JavaScript, and TypeScript, as well as frameworks like Angular and React. On the backend, I have used Node.js and Express in combination with databases like MongoDB. I’m comfortable working with Git and GitHub, and I also have experience with WordPress and WooCommerce.",
+        knowledgeText: "I have experience developing web applications from scratch, both on the frontend and backend. I work with modern technologies such as HTML, CSS, JavaScript, and TypeScript, as well as frameworks like Angular and React. On the backend, I have used Node.js and Express in combination with databases like MongoDB. I’m comfortable working with Git and GitHub.",
         contactMe: "Contact me",
         updateHeader: "What am I doing now?",
-        updateText1: "In January 2025, I completed my education along with an internship at Dise International AB. During the internship, I developed a custom CMS using Angular, TypeScript, Node.js, Express, and MongoDB. The project gave me experience in the full development process — for example, I learned how to implement authentication with JWT and how to handle file uploads to the database securely.",
-        updateText2: 'Since completing my studies, I’ve built two personal projects: a restaurant website and a hair salon booking system, both available under “My Projects.” Currently, I’ve been accepted into several short IT-related courses and am also awaiting for longer programs starting this fall. In the meantime, I’ll be freelancing and building a portfolio website for a client.'
+        updateText1: "During 2025, I have worked on two projects, a restaurant website and a hairdresser website, both of which are available under 'My Projects'. I have also taken several relevant courses, such as Introduction to IT, Web Development 1, and Cloud Development. Additionally, I have had the opportunity to assist the Munskänkarna association in updating and improving their website. Currently, I am analyzing the website traffic using GA4 and Matomo.",
     }
 }
 
@@ -181,7 +160,7 @@ const knowledgeText = document.getElementById('knowledgeText');
 const contactMe = document.getElementById('contactMe');
 const updateHeader = document.getElementById('nowUpdate');
 const updateText1 = document.getElementById('textUpdate1');
-const updateText2 = document.getElementById('textUpdate2');
+
 
 const togglerButton = document.querySelector('.languageTogglerButton');
 let currentLanguage = 'en';
@@ -204,15 +183,17 @@ function switchLanguage() {
     contactMe.textContent = toggleText[currentLanguage].contactMe;
     updateHeader.textContent = toggleText[currentLanguage].updateHeader;
     updateText1.textContent = toggleText[currentLanguage].updateText1;
-    updateText2.textContent = toggleText[currentLanguage].updateText2;
-
 }
 
 function initializeLanguage() {
     switchLanguage();
 }
 
-togglerButton.addEventListener('click', switchLanguage);
-initializeLanguage();
+togglerButton.addEventListener('click', function () {
+    switchLanguage();
 
-console.log(updateHeader);
+    if (window.matchMedia('(max-width: 610px)').matches) {
+        closeMenuBar();
+    }
+});
+initializeLanguage();
