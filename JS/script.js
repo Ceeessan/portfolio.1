@@ -125,7 +125,7 @@ const toggleText = {
         knowledgeText: "Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub.",
         contactMe: "Kontakta mig",
         updateHeader: "Vad gör jag nu?",
-        updateText1: "Under 2025 har jag arbetat med två projekt, en restauranghemsida och en frisörhemsida, som båda finns tillgängliga under 'Mina Projekt'. Jag tar även några relevanta kurser såsom Grundkurs IT, Webbutveckling 1 och Cloud-utveckling. Dessutom har jag haft möjligheten att hjälpa föreningen Munskänkarna med att uppdatera och förbättra deras hemsida. Just nu analyserar jag trafiken på deras webbplats med hjälp av GA4 och Matomo.",
+        updateText1: "Just nu jobbar jag på att utveckla min kompetens inom både webbutveckling och digital analys. Jag går en kurs i webbutveckling med fokus på script och databaser, samt en YH-utbildning inom webbanalys för att stärka min förmåga att analysera och optimera webbplatser. Utöver min utbildning har jag haft möjlighet att arbeta med föreningen Munskänkarna, där jag har bidragit till att uppdatera och förbättra deras webbplats. Sedan september 2025 har jag testat att analysera trafiken på deras webbplats med hjälp av Google Analytics 4 (GA4) och Matomo.",
     },
     en: {
         languageToggler: "Swedish",
@@ -144,7 +144,7 @@ const toggleText = {
         knowledgeText: "I have experience developing web applications from scratch, both on the frontend and backend. I work with modern technologies such as HTML, CSS, JavaScript, and TypeScript, as well as frameworks like Angular and React. On the backend, I have used Node.js and Express in combination with databases like MongoDB. I’m comfortable working with Git and GitHub.",
         contactMe: "Contact me",
         updateHeader: "What am I doing now?",
-        updateText1: "During 2025, I have worked on two projects, a restaurant website and a hairdresser website, both of which are available under 'My Projects'. I have also taken several relevant courses, such as Introduction to IT, Web Development 1, and Cloud Development. Additionally, I have had the opportunity to assist the Munskänkarna association in updating and improving their website. Currently, I am analyzing the website traffic using GA4 and Matomo.",
+        updateText1: "I am currently developing my expertise in both web development and digital analytics.I am taking a course in web development with a focus on scripting and databases, as well as a vocational education program in web analytics to strengthen my ability to analyze and optimize websites. In addition to my studies, I have had the opportunity to work with the association Munskänkarna, where I have contributed to updating and improving their website. Since September 2025, I have been analyzing their website traffic using Google Analytics 4 (GA4) and Matomo.",
     }
 }
 

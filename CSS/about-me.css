@@ -60,15 +60,25 @@ header .togglerDiv{
 }
 
 header #languageToggler{
-     background-color: rgb(214, 214, 214);
     height: 2rem;
-    width: 6rem;
+    width: 6.5rem;
     font-size:0.8rem;
     color: var(--primary-color);
-    background-color:none;
-    border: none;
-    border-radius: 0.1rem;
-    transition: font-size 0.3s ease, width 0.3s ease;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    background:
+    radial-gradient(
+      circle at 50% 40%,
+      #ffffff 0%,
+      #f3f4f6 55%,
+      #e5e7eb 100%
+    );
+    box-shadow:
+        10px 10px 22px rgba(154, 154, 154, 0.12),
+        inset 4px 4px 8px rgba(140, 140, 140, 0.15),
+        inset -4px -4px 8px rgba(211, 211, 211, 0.8);
+        border: 1px solid rgba(101, 98, 98, 0.6);
+    border-radius: 10rem;
     cursor:pointer;
 }
 
@@ -151,8 +161,6 @@ main .about-me-tabs .tab-link.active{
     border-bottom: 1px solid black;
 }
 
-
-
 .tab-panel {
     display: none;
 }
@@ -162,10 +170,13 @@ main .about-me-tabs .tab-link.active{
 }
 
 main .about-me-card{
-    max-width: 50%;
-    padding: 2rem;
+    text-align: center;
+    align-items:center;
+    max-width: 40%;
+    padding: 1rem;
     margin:auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+
 }
 
 main .text1,
@@ -186,9 +197,10 @@ main #takenCourseH4{
 .taken-courses-ul{
     list-style-type: none;
     line-height: 1.6rem;
-    text-align: left;
-    padding-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
     font-weight: 300;
+
 }
 
 .taken-courses-li{
@@ -291,6 +303,7 @@ footer a.email-me{
 
     main .about-me-tabs{
         max-width: 100%;
+        font-size: 0.8rem;
     }
 
     main .about-me-card{

@@ -77,9 +77,9 @@ header #competence,
       #e5e7eb 100%
     );
     box-shadow:
-        10px 10px 22px rgba(0, 0, 0, 0.12),
-        inset 4px 4px 8px rgba(0, 0, 0, 0.15),
-        inset -4px -4px 8px rgba(177, 176, 176, 0.8);
+        10px 10px 22px rgba(154, 154, 154, 0.12),
+        inset 4px 4px 8px rgba(140, 140, 140, 0.15),
+        inset -4px -4px 8px rgba(211, 211, 211, 0.8);
         border: 1px solid rgba(101, 98, 98, 0.6);
     border-radius: 10rem;
     cursor:pointer;
@@ -167,9 +167,9 @@ main .about-me-btn{
     border-radius: 10rem;
     cursor:pointer;
     box-shadow:
-        10px 10px 22px rgba(0, 0, 0, 0.12),
-        inset 4px 4px 8px rgba(0, 0, 0, 0.15),
-        inset -4px -4px 8px rgba(177, 176, 176, 0.8);
+        10px 10px 22px rgba(155, 155, 155, 0.12),
+        inset 4px 4px 8px rgba(117, 117, 117, 0.15),
+        inset -4px -4px 8px rgba(221, 221, 221, 0.8);
     border: 1px solid rgba(101, 98, 98, 0.6);
 }
 
@@ -608,12 +608,13 @@ footer a.email-me{
     .cvBtn,
     #languageToggler{
         transition: none;
-        font-size: 0.8rem; 
+        font-size: 1.2rem; 
         width: 9rem; 
         border:none;
         text-align:center;
         color: rgb(242, 242, 242);
         background:none;
+        box-shadow: none;
         padding: 1rem;
         margin-bottom: 4rem;
     }
