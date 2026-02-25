@@ -556,6 +556,11 @@ footer .fa-github{
     font-size: 1.5rem;
 }
 
+.termly-display-preferences{
+    color: white;
+    font-size: 1.5rem;
+}
+
 footer a.email-me{
     margin:auto;
     display:flex;
@@ -567,6 +572,7 @@ footer a.email-me{
     font-size: 0.8rem;
     text-decoration:none;
 }
+
 
 
 @media (max-width: 610px){
