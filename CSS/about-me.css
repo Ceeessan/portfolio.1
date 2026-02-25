@@ -1,163 +1,171 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --secondary-color: #bda68c;
-    --dark-color:  #222222;
-    --primary-color:  #423c28;
+    --dark-color: #222222;
+    --primary-color: #423c28;
     --light-background: rgb(158, 154, 154);
 }
 
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     position: relative;
-    background-image: url('../images/texture-img.jpg');
-    background-size: cover; 
-    background-position: center; 
+    background-image: url("../images/texture-img.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-} 
+}
 
-header{
+header {
     width: 100%;
     height: 6rem;
 }
 
-header .header-background{
-    display:flex;
+header .header-background {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header #portfolioByAboutMe{
+header #portfolioByAboutMe {
     color: var(--secondary-color);
-    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+    font-family:
+        Dancing Script,
+        Arial,
+        Helvetica,
+        sans-serif;
     font-size: 1.4rem;
     padding-left: 1.5rem;
     margin-top: 1rem;
 }
 
-header .my-name{
-    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+header .my-name {
+    font-family:
+        Dancing Script,
+        Arial,
+        Helvetica,
+        sans-serif;
     line-height: 4rem;
     font-size: 3.2rem;
     color: var(--primary-color);
     margin-left: 2.5rem;
-    text-decoration:none;
-    transition: color 0.3s ease, font-size 0.3s ease;
+    text-decoration: none;
+    transition:
+        color 0.3s ease,
+        font-size 0.3s ease;
 }
 
-header .my-name:hover{
-    color:var(--secondary-color);
+header .my-name:hover {
+    color: var(--secondary-color);
     font-size: 3.25rem;
 }
 
-header .togglerDiv{
-    padding-top:2rem;
-    padding-right:2rem;
+header .togglerDiv {
+    padding-top: 2rem;
+    padding-right: 2rem;
 }
 
-header #languageToggler{
+header #languageToggler {
     height: 2rem;
     width: 6.5rem;
-    font-size:0.8rem;
+    font-size: 0.8rem;
     color: var(--primary-color);
-    padding-left:0.5rem;
-    padding-right:0.5rem;
-    background:
-    radial-gradient(
-      circle at 50% 40%,
-      #ffffff 0%,
-      #f3f4f6 55%,
-      #e5e7eb 100%
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: radial-gradient(
+        circle at 50% 40%,
+        #ffffff 0%,
+        #f3f4f6 55%,
+        #e5e7eb 100%
     );
     box-shadow:
         10px 10px 22px rgba(154, 154, 154, 0.12),
         inset 4px 4px 8px rgba(140, 140, 140, 0.15),
         inset -4px -4px 8px rgba(211, 211, 211, 0.8);
-        border: 1px solid rgba(101, 98, 98, 0.6);
+    border: 1px solid rgba(101, 98, 98, 0.6);
     border-radius: 10rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-header #languageToggler:hover{
+header #languageToggler:hover {
     width: 6.2rem;
     font-size: 13px;
 }
 
-main .arrow-icon-container{
+main .arrow-icon-container {
     padding: 2rem;
 }
 
-main .arrow-icon{
+main .arrow-icon {
     font-size: 1.8rem;
     color: var(--dark-color);
     transition: color 0.3s ease;
 }
 
-main .arrow-icon:hover{
+main .arrow-icon:hover {
     color: var(--primary-color);
-
 }
 
-main .image-and-info-container{
+main .image-and-info-container {
     max-width: 50%;
     padding: 2rem;
     background-color: rgb(213, 213, 213);
     box-shadow: 2px 2px 10px grey;
     border-radius: 10px;
-    margin:auto;
+    margin: auto;
     margin-bottom: 2rem;
 }
 
-#coverLetter{
+#coverLetter {
     text-align: center;
-    padding-bottom:1rem;
+    padding-bottom: 1rem;
 }
 
-main .image-and-info{
-    display:flex;
+main .image-and-info {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 85%;
-    align-items:center;
-    text-align:center;
-    margin:auto;
+    align-items: center;
+    text-align: center;
+    margin: auto;
 }
 
-main .image-and-info img{
-    max-width:12rem;
+main .image-and-info img {
+    max-width: 12rem;
     height: auto;
     border-radius: 5px;
 }
 
-main .image-and-info ul{
+main .image-and-info ul {
     list-style-type: none;
     line-height: 1.5rem;
     text-align: left;
     font-weight: 300;
 }
 
-main .about-me-tabs{
-    display:flex;
+main .about-me-tabs {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-weight: 300;
     max-width: 80%;
     text-align: center;
-    align-items:center;
-    margin:auto;
-    padding:1rem;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
 }
 
-main .about-me-tabs .tab-link{
+main .about-me-tabs .tab-link {
     color: black;
     text-decoration: none;
 }
 
-main .about-me-tabs .tab-link.active{
+main .about-me-tabs .tab-link.active {
     border-bottom: 1px solid black;
 }
 
@@ -166,156 +174,157 @@ main .about-me-tabs .tab-link.active{
 }
 
 .tab-panel.active {
-    display: block; 
+    display: block;
 }
 
-main .about-me-card{
+main .about-me-card {
     text-align: center;
-    align-items:center;
+    align-items: center;
     max-width: 40%;
     padding: 1rem;
-    margin:auto;
+    margin: auto;
     margin-bottom: 3rem;
-
 }
 
 main .text1,
 .text2,
-.text3{
+.text3 {
     margin-top: 1rem;
     font-size: 1rem;
-    line-height:1.5rem;
-    text-align:center;
-    padding-bottom:1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
     font-weight: 300;
 }
 
-main #takenCourseH4{
+main #takenCourseH4 {
     padding-bottom: 1rem;
 }
 
-.taken-courses-ul{
+.taken-courses-ul {
     list-style-type: none;
     line-height: 1.6rem;
     text-align: center;
     padding-bottom: 2rem;
     font-weight: 300;
-
 }
 
-.taken-courses-li{
-    padding-left:0.8rem;
+.taken-courses-li {
+    padding-left: 0.8rem;
 }
 
-footer{
-    margin: auto; 
+footer {
+    margin: auto;
     width: 100%;
     height: 20rem;
     line-height: 3rem;
-    background-color:#2C2C2C;
+    background-color: #2c2c2c;
     padding: 1.5rem 1.4rem;
-    background-color: var(--dark-color);    
+    background-color: var(--dark-color);
 }
 
-.footer-container{
-    display:flex;
+.footer-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    text-align:center;
-    margin:auto;
-}
-
-footer h3.get-in-touch{
-    color:white;
-}
-
-footer a.linkedin{
-    margin:auto;
-    display:flex;
-    justify-content:center;
     align-items: center;
-    width:1.5rem;
-    height:1,5rem;
+    text-align: center;
+    margin: auto;
+}
+
+footer h3.get-in-touch {
+    color: white;
+}
+
+footer a.linkedin {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1, 5rem;
     text-decoration: none;
-    color:white;
-    background-color:#27689d;
-    padding:0.1rem;
-    border-radius:2px;
-    font-size: 1,5rem;
+    color: white;
+    background-color: #27689d;
+    padding: 0.1rem;
+    border-radius: 2px;
+    font-size: 1, 5rem;
     margin: 1rem;
 }
 
-footer a.cv{
-    color:rgb(22, 22, 22);
-    font-size:bold;
-    text-decoration:none;
+footer a.cv {
+    color: rgb(22, 22, 22);
+    font-size: bold;
+    text-decoration: none;
     background-color: rgb(201, 131, 2);
-    border-radius:0.1rem;
-    height:1.5rem;
-    width:1.5rem;
-    padding:0.2rem;  
+    border-radius: 0.1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.2rem;
 }
 
-footer .fa-github{
-    color:white;
+footer .fa-github {
+    color: white;
     font-size: 1.5rem;
 }
 
-footer a.email-me{
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    color:rgb(220, 220, 220);
-    width:1.5rem;
-    height:1,5rem;
-    font-size: 0.8rem;
-    text-decoration:none;
+.termly-display-preferences {
+    color: white;
+    font-size: 1.5rem;
 }
 
+footer a.email-me {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(220, 220, 220);
+    width: 1.5rem;
+    height: 1, 5rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
 
-@media (max-width: 610px){
-
-    header{
+@media (max-width: 610px) {
+    header {
         width: 100%;
     }
 
-    header #portfolioByAboutMe{
+    header #portfolioByAboutMe {
         font-size: 1.5rem;
     }
 
-    header .my-name{
+    header .my-name {
         font-size: 2rem;
     }
 
-    header .my-name:hover{
+    header .my-name:hover {
         font-size: 2.1rem;
     }
 
-    main .image-and-info-container{
+    main .image-and-info-container {
         max-width: 90%;
     }
 
-    main .image-and-info{
+    main .image-and-info {
         flex-direction: column;
     }
 
-    main .about-me-tabs{
+    main .about-me-tabs {
         max-width: 100%;
         font-size: 0.8rem;
     }
 
-    main .about-me-card{
+    main .about-me-card {
         max-width: 90%;
     }
 
-    main .image-and-info ul{
+    main .image-and-info ul {
         margin-top: 1.5rem;
         text-align: center;
     }
 
-    main .about-me-container{
+    main .about-me-container {
         width: 90%;
-    } 
+    }
 }
