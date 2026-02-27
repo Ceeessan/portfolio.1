@@ -31,9 +31,11 @@ const openMenuBar = function () {
 }
 
 const closeMenuBar = function () {
-    menuBar.classList.remove("change");
-    sideMenu.classList.remove("active");
-    sideMenu.style.display = 'none';
+    if (window.innerWidth <= 610) {
+        menuBar.classList.remove("change");
+        sideMenu.classList.remove("active");
+        sideMenu.style.display = 'none';
+    }
 };
 
 const toggleMenuBar = function () {
@@ -120,12 +122,12 @@ const toggleText = {
         project1Open: "Se projektet",
         project2Open: "Se projektet",
         project3Open: "Se projektet",
-        learningAnalysisText1: "Under 2025 började jag arbeta med föreningen Munskänkarna, där jag fick i uppdrag att analysera trafiken på deras webbplats med verktygen Google Analytics 4 (GA4) och Matomo. Intresset för digital analys har växt och jag har fördjupat mina kunskaper genom att ta ett certifikat för GA4.",
-        learningAnalysisText2: "Just nu fördjupar jag mina kunskaper genom en YH-utbildning inom webbanalys, där jag arbetar med:",
+        learningAnalysisText1: "Under 2025 började jag arbeta med föreningen Munskänkarna, där fick jag i uppdrag att analysera trafiken på deras webbplats med verktygen Google Analytics 4 (GA4) och Matomo. Intresset för digital analys har växt och jag fördjupar mina kunskaper med en fem-månaders YH-utbildning inom digital analys.",
+        learningAnalysisText2: "Under min utbildning arbetar jag med att samla in och analysera KPI:er för att optimera webbtrafik och fatta datadrivna beslut. Jag säkerställer korrekt datainsamling och GDPR-anpassning. För detta använder jag viktiga verktyg såsom:",
         knowledgeText: "Jag har erfarenhet av att utveckla webbapplikationer från grunden, både med frontend och backend. Jag arbetar med moderna tekniker som HTML, CSS, JavaScript och TypeScript samt ramverk som Angular och React. På backend-sidan har jag använt Node.js och Express i kombination med databaser som MongoDB. Jag är van att arbeta med Git och GitHub.",
         contactMe: "Kontakta mig",
         updateHeader: "Vad gör jag nu?",
-        updateText1: "Just nu jobbar jag på att utveckla min kompetens inom både webbutveckling och digital analys. Jag går en kurs i webbutveckling med fokus på script och databaser, samt en YH-utbildning inom webbanalys för att stärka min förmåga att analysera och optimera webbplatser. Utöver min utbildning har jag haft möjlighet att arbeta med föreningen Munskänkarna, där jag har bidragit till att uppdatera och förbättra deras webbplats. Sedan september 2025 har jag testat att analysera trafiken på deras webbplats med hjälp av Google Analytics 4 (GA4) och Matomo.",
+        updateText1: "Just nu jobbar jag på att utveckla min kompetens inom digital analys för att kombinera detta med min tekniska kompetens. Utöver min utbildning har jag haft möjlighet att hjälpa föreningen Munskänkarna, där jag har bidragit till att analysera deras trafik.",
     },
     en: {
         languageToggler: "Swedish",
@@ -139,12 +141,12 @@ const toggleText = {
         project1Open: "See Project",
         project2Open: "See Project",
         project3Open: "See Project",
-        learningAnalysisText1: "In 2025, I started working with the association Munskänkarna, where I was tasked with analyzing their website traffic using Google Analytics 4 (GA4) and Matomo. My interest in digital analytics grew, and I further developed my skills by earning a GA4 certification.",
-        learningAnalysisText2: "I am currently expanding my expertise in web analytics through a vocational education program, focusing on:",
+        learningAnalysisText1: "In 2025, I started working with the association Munskänkarna, where I was tasked with analyzing their website traffic using Google Analytics 4 (GA4) and Matomo. My interest in digital analytics grew, and I am further developing my skills through a five-month vocational education in web analysis.",
+        learningAnalysisText2: "During my education, I work on collecting and analyzing KPIs to optimize website traffic and make data-driven decisions. I ensure proper data collection and GDPR compliance. For this, I use key tools such as:",
         knowledgeText: "I have experience developing web applications from scratch, both on the frontend and backend. I work with modern technologies such as HTML, CSS, JavaScript, and TypeScript, as well as frameworks like Angular and React. On the backend, I have used Node.js and Express in combination with databases like MongoDB. I’m comfortable working with Git and GitHub.",
         contactMe: "Contact me",
         updateHeader: "What am I doing now?",
-        updateText1: "I am currently developing my expertise in both web development and digital analytics.I am taking a course in web development with a focus on scripting and databases, as well as a vocational education program in web analytics to strengthen my ability to analyze and optimize websites. In addition to my studies, I have had the opportunity to work with the association Munskänkarna, where I have contributed to updating and improving their website. Since September 2025, I have been analyzing their website traffic using Google Analytics 4 (GA4) and Matomo.",
+        updateText1: "At the moment, I am developing my skills in digital analytics to combine them with my technical expertise. In addition to my education, I have had the opportunity to support the association Munskänkarna, where I contributed to analyzing their website traffic.",
     }
 }
 

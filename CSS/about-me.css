@@ -285,6 +285,14 @@ footer a.email-me {
     text-decoration: none;
 }
 
+a.termly-display-preferences {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 300;
+}
+
 @media (max-width: 610px) {
     header {
         width: 100%;

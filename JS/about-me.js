@@ -38,9 +38,7 @@ const toggleTextAboutMe = {
         portfolioByAboutMe: "Portfolio av",
         coverLetter: "Personlight Brev",
         nameInfo: "Namn: Cecilia Carlsen",
-        jobInfo: "Jobb: Maskinoperatör",
         livingInfo: "Boende: Munka-Ljungby",
-        internshipInfo: "Praktik: Dise",
         educationTabMenu: "Utbildning",
         courseTabMenu: "Kurser",
         afterEducationTabMenu: "Efter utbildning",
@@ -74,9 +72,7 @@ const toggleTextAboutMe = {
         portfolioByAboutMe: "Portfolio By",
         coverLetter: "Cover Letter",
         nameInfo: "Name: Cecilia Carlsen",
-        jobInfo: "Job: Machine Operator",
         livingInfo: "Living: Munka-Ljungby",
-        internshipInfo: "Internship: Dise",
         educationTabMenu: "Education",
         courseTabMenu: "Courses",
         afterEducationTabMenu: "After education",
@@ -110,9 +106,7 @@ const toggleTextAboutMe = {
 const portfolioByAboutMe = document.getElementById('portfolioByAboutMe');
 const coverLetter = document.getElementById('coverLetter');
 const nameInfo = document.getElementById('nameInfo');
-const jobInfo = document.getElementById('jobInfo');
 const livingInfo = document.getElementById('livingInfo');
-const internshipInfo = document.getElementById('internshipInfo');
 const educationTabMenu = document.getElementById('educationTabMenu');
 const courseTabMenu = document.getElementById('courseTabMenu');
 const afterEducationTabMenu = document.getElementById('afterEducationTabMenu');
@@ -140,9 +134,7 @@ function switchLanguageAboutMe() {
     portfolioByAboutMe.textContent = toggleTextAboutMe[currentLanguageAboutMe].portfolioByAboutMe;
     coverLetter.textContent = toggleTextAboutMe[currentLanguageAboutMe].coverLetter;
     nameInfo.textContent = toggleTextAboutMe[currentLanguageAboutMe].nameInfo;
-    jobInfo.textContent = toggleTextAboutMe[currentLanguageAboutMe].jobInfo;
     livingInfo.textContent = toggleTextAboutMe[currentLanguageAboutMe].livingInfo;
-    internshipInfo.textContent = toggleTextAboutMe[currentLanguageAboutMe].internshipInfo;
     educationTabMenu.textContent = toggleTextAboutMe[currentLanguageAboutMe].educationTabMenu;
     courseTabMenu.textContent = toggleTextAboutMe[currentLanguageAboutMe].courseTabMenu;
     afterEducationTabMenu.textContent = toggleTextAboutMe[currentLanguageAboutMe].afterEducationTabMenu;

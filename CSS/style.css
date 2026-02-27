@@ -1,100 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --secondary-color: #bda68c;
-    --dark-color:  #222222;
-    --primary-color:  #423c28;
+    --dark-color: #222222;
+    --primary-color: #423c28;
     --light-background: rgb(158, 154, 154);
 }
 
- body {
+body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     position: relative;
-    background-image: url('../images/texture-img.jpg');
-    background-size: cover; 
-    background-position: center; 
+    background-image: url("../images/texture-img.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-} 
+}
 
-header{
+header {
     width: 100%;
     height: 10rem;
 }
 
-header .header-background{
-    display:flex;
+header .header-background {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header #portfolioBy{
+header #portfolioBy {
     color: var(--secondary-color);
-    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+    font-family:
+        Dancing Script,
+        Arial,
+        Helvetica,
+        sans-serif;
     font-size: 1.8rem;
     padding-left: 1.5rem;
     margin-top: 1rem;
 }
 
-header .my-name{
-    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+header .my-name {
+    font-family:
+        Dancing Script,
+        Arial,
+        Helvetica,
+        sans-serif;
     line-height: 4rem;
     font-size: 4.5rem;
     color: var(--primary-color);
     margin-left: 2.5rem;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-header .side-menu-wrapper{
-    display:flex;
+header .side-menu-wrapper {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top:2rem;
+    padding-top: 2rem;
     padding-right: 2rem;
 }
 
-header button{
+header button {
     margin: 0.4rem;
 }
 
-header #competence, 
+header #competence,
 .cvBtn,
-#languageToggler{
+#languageToggler {
     height: 2rem;
     width: 6.5rem;
-    font-size:0.8rem;
+    font-size: 0.8rem;
     color: var(--primary-color);
-    padding-left:0.5rem;
-    padding-right:0.5rem;
-    background:
-    radial-gradient(
-      circle at 50% 40%,
-      #ffffff 0%,
-      #f3f4f6 55%,
-      #e5e7eb 100%
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: radial-gradient(
+        circle at 50% 40%,
+        #ffffff 0%,
+        #f3f4f6 55%,
+        #e5e7eb 100%
     );
     box-shadow:
         10px 10px 22px rgba(154, 154, 154, 0.12),
         inset 4px 4px 8px rgba(140, 140, 140, 0.15),
         inset -4px -4px 8px rgba(211, 211, 211, 0.8);
-        border: 1px solid rgba(101, 98, 98, 0.6);
+    border: 1px solid rgba(101, 98, 98, 0.6);
     border-radius: 10rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 header .cvBtn a {
     text-decoration: none;
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
 
-header #menuBarId{
-    display:none;
+header #menuBarId {
+    display: none;
 }
 
-header .bar1, .bar2, .bar3 {
+header .bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     margin: 6px 0;
@@ -104,68 +113,67 @@ header .bar1, .bar2, .bar3 {
 header .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
-  
+
 header .change .bar2 {
     opacity: 0;
 }
-  
+
 header .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-main .image-title-container{
-    display:flex;
+main .image-title-container {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: 100%;
     margin-top: 4rem;
 }
 
-main img.portrait{
+main img.portrait {
     width: 16rem;
     height: auto;
-    box-shadow: 10px 5px 10px  black;
+    box-shadow: 10px 5px 10px black;
 }
 
-main .image-title-container #webDeveloper{
+main .image-title-container #webDeveloper {
     margin-left: 2rem;
     margin-top: 4rem;
-    padding-left:0.5rem;
+    padding-left: 0.5rem;
     border-left: 2px solid var(--dark-color);
     color: var(--dark-color);
     line-height: 4rem;
     font-size: 3.2rem;
 }
 
-main .image-title-container #webDeveloperText{
-    max-width:30rem;
-    padding-left:3rem;
+main .image-title-container #webDeveloperText {
+    max-width: 30rem;
+    padding-left: 3rem;
     margin-bottom: 3rem;
     font-weight: bold;
     line-height: 1.4rem;
-    letter-spacing:0.5px;
+    letter-spacing: 0.5px;
 }
 
-main .about-me-container{
-    display:flex;
+main .about-me-container {
+    display: flex;
     flex-direction: column;
 }
 
-main .about-me-btn{
-    background:
-    radial-gradient(
-      circle at 50% 40%,
-      #ffffff 0%,
-      #f3f4f6 55%,
-      #e5e7eb 100%
+main .about-me-btn {
+    background: radial-gradient(
+        circle at 50% 40%,
+        #ffffff 0%,
+        #f3f4f6 55%,
+        #e5e7eb 100%
     );
     width: 7rem;
     height: 2rem;
-    margin:auto;
-    transition: background-color 0.3s ease; 
+    margin: auto;
+    transition: background-color 0.3s ease;
     border-radius: 10rem;
-    cursor:pointer;
+    cursor: pointer;
     box-shadow:
         10px 10px 22px rgba(155, 155, 155, 0.12),
         inset 4px 4px 8px rgba(117, 117, 117, 0.15),
@@ -173,30 +181,30 @@ main .about-me-btn{
     border: 1px solid rgba(101, 98, 98, 0.6);
 }
 
-main .about-me-btn:hover{
+main .about-me-btn:hover {
     background-color: rgb(236, 236, 236);
 }
 
-main #aboutMe{
+main #aboutMe {
     text-decoration: none;
     color: var(--dark-color);
 }
 
-main .image-title-container #aboutMe:hover{
+main .image-title-container #aboutMe:hover {
     color: var(--primary-color);
 }
 
-main #myProjectsText{
-    text-align:center;
-    margin:auto;
+main #myProjectsText {
+    text-align: center;
+    margin: auto;
     margin-top: 10rem;
     margin-bottom: -3rem;
     font-weight: 300;
 }
 
-main .show-project{
-    width:10rem;
-    height:10rem;
+main .show-project {
+    width: 10rem;
+    height: 10rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin: 0.5rem;
@@ -206,27 +214,30 @@ main .show-project{
     color: rgb(234, 234, 234);
     background-color: var(--dark-color);
     border-radius: 0.3rem;
-    cursor:pointer;
+    cursor: pointer;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.3s ease;
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        background-color 0.3s ease;
     box-shadow: 2px 2px 10px var(--dark-color);
 }
 
-main .show-project.show{
+main .show-project.show {
     max-width: 20%;
     opacity: 1;
     transform: translateY(0);
     font-size: 1rem;
-} 
+}
 
-main .show-project:hover{
+main .show-project:hover {
     background-color: rgb(51, 51, 51);
 }
 
-main .project{
+main .project {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -234,93 +245,91 @@ main .project{
     background-color: rgb(248, 248, 248);
     padding: 3rem;
     border-radius: 5px;
-    box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 
-main .project ul{
-    font-size:12px;
+main .project ul {
+    font-size: 12px;
     line-height: 18px;
     margin-bottom: 1rem;
 }
 
-main .project ul li{
-    list-style: none; 
+main .project ul li {
+    list-style: none;
     background-image: url("/images/star.svg");
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    background-position: left center; 
+    background-position: left center;
     padding-left: 25px;
-    padding-bottom:2px;
+    padding-bottom: 2px;
 }
 
-.fa-github::before{
+.fa-github::before {
     font-size: 24px;
 }
 
- main 
- .close-project1, 
- .close-project2, 
- .close-project3, 
- .close-project4{
+main .close-project1,
+.close-project2,
+.close-project3,
+.close-project4 {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    font-size : 3rem;
+    font-size: 3rem;
     color: rgb(40, 40, 40);
     background-color: rgb(248, 248, 248);
     cursor: pointer;
     border: none;
-    
- }
+}
 
- main .button-project-div{
+main .button-project-div {
     margin-top: 5rem;
     display: flex;
-    align-items: flex-start; 
-    justify-content: center; 
-    margin-bottom:8rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 8rem;
 }
 
- main .github-icon{
-    font-size:1.5rem;
- }
-
-main .hidden{
-display: none; 
+main .github-icon {
+    font-size: 1.5rem;
 }
 
-main .guess-number{
+main .hidden {
+    display: none;
+}
+
+main .guess-number {
     width: 95%;
     height: 150%;
-    box-shadow: 0 1rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-main .project-name{
+main .project-name {
     color: var(--dark-color);
-    font-size: 1rem; 
+    font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-main .description-text{
+main .description-text {
     font-size: 12px;
     margin-bottom: 1rem;
 }
 
-main .link-to-project{
-    font-size:14px;
+main .link-to-project {
+    font-size: 14px;
     color: var(--dark-color);
-    padding-bottom:0.2rem;
+    padding-bottom: 0.2rem;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     transition: color 0.3s ease;
 }
 
-main .link-to-project:hover{
-    color: var(--primary-color);   
+main .link-to-project:hover {
+    color: var(--primary-color);
 }
 
-main .overlay{
+main .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -333,10 +342,10 @@ main .overlay{
 
 main .knowledge-section {
     position: relative;
-    background-image: url('../images/computer.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-image: url("../images/computer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 31rem;
     padding-top: 10rem;
     color: #f2f2f2;
@@ -349,58 +358,59 @@ main .knowledge-section {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black; 
+    background-color: black;
     opacity: 0.6;
     z-index: 1;
 }
 
 .knowledge-section * {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
-main .coding-text{
+main .coding-text {
     max-width: 24rem;
     font-size: 1rem;
-    height:10rem;
-    text-align:center;
+    height: 10rem;
+    text-align: center;
     line-height: 1.5em;
-    margin:auto;
-    padding:1rem;
+    margin: auto;
+    padding: 1rem;
     margin-top: -4rem;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
-main .knowledge-container{
-    display:flex;
+main .knowledge-container {
+    display: flex;
     justify-content: flex-start;
-    align-items:center;
-    text-align:center;
-    margin:auto;
+    align-items: center;
+    text-align: center;
+    margin: auto;
     margin-top: 6rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     width: 90%;
-    align-items:center;
-    -webkit-overflow-scrolling: touch; 
+    align-items: center;
+    -webkit-overflow-scrolling: touch;
 }
 
-main .knowledge-container .icon-text{
+main .knowledge-container .icon-text {
     padding-top: 0.2rem;
     font-size: 12px;
 }
 
-main .knowledge-icon{
+main .knowledge-icon {
     display: flex;
     gap: 15px;
     margin-left: 0;
     width: 6em;
-    height:6rem;
-    background-color:rgb(36, 36, 36);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
-    -4px -4px 10px rgba(0, 0, 0, 0.1);
+    height: 6rem;
+    background-color: rgb(36, 36, 36);
+    box-shadow:
+        4px 4px 10px rgba(0, 0, 0, 0.2),
+        -4px -4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
 main .knowledge-container::-webkit-scrollbar {
@@ -408,26 +418,26 @@ main .knowledge-container::-webkit-scrollbar {
 }
 
 main .knowledge-container::-webkit-scrollbar-thumb {
-    background-color: #ccc; 
+    background-color: #ccc;
     border-radius: 10px;
 }
 
 main .knowledge-container::-webkit-scrollbar-thumb:hover {
-    background-color: #999; 
+    background-color: #999;
 }
 
 main .knowledge-container::-webkit-scrollbar-track {
-    background: #5c5c5c; 
+    background: #5c5c5c;
 }
 
 main .knowledge-scroll {
-    display:flex;
+    display: flex;
     gap: 1.1rem;
     padding-bottom: 1rem;
 }
 
-main .digital-analyst-container{
-    display:flex;
+main .digital-analyst-container {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: auto;
@@ -439,15 +449,15 @@ main .digital-analyst-container{
         0deg,
         rgb(213, 210, 207) 20%,
         rgb(127, 123, 121) 70%
-    ); 
+    );
 }
 
 main .digital-analyst-container .digital-analyst-header {
-    padding:1rem;
+    padding: 1rem;
 }
 
 main .digital-analyst-container .digital-analyst-p {
-    padding:1rem;
+    padding: 1rem;
     max-width: 28rem;
     font-weight: 300;
     line-height: 1.3;
@@ -457,25 +467,19 @@ main .digital-analyst-container ul {
     list-style-type: square;
     padding-left: 2rem;
     padding-bottom: 1rem;
-} 
+}
 
 main .digital-analyst-container .analyst-document {
-    padding:1rem;
-    color:black;
+    padding: 1rem;
+    color: black;
 }
 
-main .digital-analyst-container .analyst-certificate img{
-    border-radius: 2rem;
-    max-width: 18rem;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2); 
-}
-
-main .what-I-do-now{
-    margin:auto;
-    display:flex;
+main .what-I-do-now {
+    margin: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align:center;
+    text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
     max-width: 100%;
@@ -485,11 +489,11 @@ main .what-I-do-now{
         0deg,
         rgb(119, 118, 118) 20%,
         rgb(84, 80, 71) 70%
-    ); 
+    );
 }
 
-main #nowUpdate{
-    margin:auto;
+main #nowUpdate {
+    margin: auto;
     max-width: 25%;
     font-size: 2.2rem;
     text-align: center;
@@ -497,7 +501,7 @@ main #nowUpdate{
     color: rgb(228, 227, 227);
 }
 
-main #textUpdate1{
+main #textUpdate1 {
     text-align: center;
     margin: auto;
     line-height: 1.4em;
@@ -507,101 +511,101 @@ main #textUpdate1{
     padding-bottom: 1rem;
 }
 
-#githubLink{
+#githubLink {
     color: rgb(228, 227, 227);
 }
 
-footer{
-    margin: auto; 
+footer {
+    margin: auto;
     width: 100%;
     height: 20rem;
     line-height: 3rem;
-    background-color:#2C2C2C;
+    background-color: #2c2c2c;
     padding: 1rem 1.2rem;
-    background-color: var(--dark-color);    
+    background-color: var(--dark-color);
 }
 
-.footer-container{
-    display:flex;
+.footer-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    text-align:center;
-    margin:auto;
-}
-
-footer h3.get-in-touch{
-    margin-top: 3rem;
-    color:white;
-}
-
-footer a.linkedin{
-    margin:auto;
-    display:flex;
-    justify-content:center;
     align-items: center;
-    width:1.5rem;
-    height:1,5rem;
+    text-align: center;
+    margin: auto;
+}
+
+footer h3.get-in-touch {
+    margin-top: 3rem;
+    color: white;
+}
+
+footer a.linkedin {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1, 5rem;
     text-decoration: none;
-    color:white;
-    background-color:#27689d;
-    padding:0.1rem;
-    border-radius:2px;
+    color: white;
+    background-color: #27689d;
+    padding: 0.1rem;
+    border-radius: 2px;
     font-size: 1rem;
     margin: 1rem;
 }
 
-footer .fa-github{
-    color:white;
-    font-size: 1.5rem;
-}
-
-.termly-display-preferences{
+footer .fa-github {
     color: white;
     font-size: 1.5rem;
 }
 
-footer a.email-me{
-    margin:auto;
-    display:flex;
-    justify-content:center;
+footer a.email-me {
+    margin: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    color:rgb(220, 220, 220);
-    width:1.5rem;
-    height:1.5rem;
+    color: rgb(220, 220, 220);
+    width: 1.5rem;
+    height: 1.5rem;
     font-size: 0.8rem;
-    text-decoration:none;
+    text-decoration: none;
 }
 
+a.termly-display-preferences {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 300;
+}
 
-
-@media (max-width: 610px){
-
-    header{
-        margin-bottom: 3rem; 
+@media (max-width: 610px) {
+    header {
+        margin-bottom: 3rem;
     }
 
-    header .my-name{
+    header .my-name {
         font-size: 2.5rem;
     }
 
     header .side-menu {
-        display: none; 
+        display: none;
         position: absolute;
         top: 0;
-        right: 0; 
+        right: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(59, 59, 59, 0.9); 
-        z-index: 998; 
+        background-color: rgba(59, 59, 59, 0.9);
+        z-index: 998;
     }
 
     header .side-menu.active {
         display: block;
     }
 
-    header .side-menu-wrapper{
-        display:flex;
+    header .side-menu-wrapper {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -609,113 +613,104 @@ footer a.email-me{
         padding-top: 7rem;
     }
 
-    header 
-    #competence,
+    header #competence,
     .cvBtn,
-    #languageToggler{
+    #languageToggler {
         transition: none;
-        font-size: 1.2rem; 
-        width: 9rem; 
-        border:none;
-        text-align:center;
+        font-size: 1.2rem;
+        width: 9rem;
+        border: none;
+        text-align: center;
         color: rgb(242, 242, 242);
-        background:none;
+        background: none;
         box-shadow: none;
         padding: 1rem;
         margin-bottom: 4rem;
     }
-    
+
     header .cvBtn a {
-        color:rgb(242, 242, 242);
+        color: rgb(242, 242, 242);
         background-color: none;
     }
-     
-    header #menuBarId{
-        display:inline-block;
-        position:absolute;
+
+    header #menuBarId {
+        display: inline-block;
+        position: absolute;
         top: 2rem;
         right: 2.5rem;
-        z-index: 1000;   
+        z-index: 1000;
     }
 
-    header .bar1, .bar2, .bar3 {
+    header .bar1,
+    .bar2,
+    .bar3 {
         background-color: rgb(202, 200, 198);
         box-shadow: 0.5px 0.5px 0.8px rgba(255, 255, 255, 0.8);
     }
 
-    main .image-title-container{
-        margin:auto;
-        display:flex;
+    main .image-title-container {
+        margin: auto;
+        display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        padding-right:2rem;
+        padding-right: 2rem;
     }
 
-    main img.portrait{
+    main img.portrait {
         width: 12rem;
-        height: 12rem; 
+        height: 12rem;
     }
 
-    main .image-title-container #webDeveloper{
+    main .image-title-container #webDeveloper {
         font-size: 2rem;
     }
 
-    main #myProjectsText{
+    main #myProjectsText {
         margin-top: 6rem;
     }
 
-    main div.button-project-div{
-        margin:auto;
-        display:flex;
-        flex-wrap:wrap;
+    main div.button-project-div {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
         max-width: 80%;
         margin-top: 6rem;
         margin-bottom: 7rem;
     }
 
-    main .show-project.show{
+    main .show-project.show {
         max-width: 35%;
         font-size: 12px;
     }
 
-    main .project{
+    main .project {
         width: 70%;
-        padding: 3rem;        
+        padding: 3rem;
     }
 
-    main .knowledge-icon{
+    main .knowledge-icon {
         padding: 1rem;
         width: 5em;
-        height:6rem;
+        height: 6rem;
     }
 
-    main .digital-analyst-container{
-        display:flex;
-        flex-direction:column;
-        height: 28rem;
-        height: auto;
-    }
-
-    main .coding-text{
+    main .coding-text {
         font-size: 0.7rem;
         max-width: 17rem;
         margin-top: -2rem;
         line-height: 1.1rem;
     }
 
-    main .knowledge-container{
-    margin-top: 4rem;
-}
+    main .knowledge-container {
+        margin-top: 4rem;
+    }
 
-    main #nowUpdate{
+    main #nowUpdate {
         max-width: 40%;
     }
 
-    main #textUpdate1{
+    main #textUpdate1 {
         max-width: 80%;
     }
-
-
-
 }
