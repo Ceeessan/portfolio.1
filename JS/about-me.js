@@ -52,7 +52,7 @@ const toggleTextAboutMe = {
         coursesFromEducation:
             "Kurser från min utbildning",
         coursesFromAntagning:
-            "Kurser från Antagning.se",
+            "Färdiga kurser",
         coursesWithCert:
             "Kurser med Certifikat",
         courseNow:
@@ -86,7 +86,7 @@ const toggleTextAboutMe = {
         coursesFromEducation:
             "Courses From Education(In Swedish)",
         coursesFromAntagning:
-            "Courses from Antagning.se (In Swedish)",
+            "Completed courses (In Swedish)",
         coursesWithCert:
             "Courses with Certificate",
         courseNow:
