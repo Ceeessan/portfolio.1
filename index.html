@@ -5,24 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
 
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js",
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-MH4Q4KTS");
-        </script>
-        <!-- End Google Tag Manager -->
-
         <script src="JS/script.js" type="module" defer></script>
 
         <link
@@ -32,12 +14,6 @@
             class="favicon"
         />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-            rel="stylesheet"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -53,16 +29,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-MH4Q4KTS"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
         <header>
             <div class="header-background">
                 <div class="made-by-div">
@@ -96,7 +62,7 @@
                                     id="languageToggler"
                                     class="languageTogglerButton"
                                 >
-                                    English
+                                    In English
                                 </button>
                             </div>
                         </div>
@@ -116,313 +82,333 @@
                     />
                 </figure>
                 <div class="about-me-container">
-                    <h3 id="webDeveloper">Jag är Webbutvecklare...</h3>
+                    <h3 id="webDeveloper">Jag är Frontendutvecklare</h3>
                     <p id="webDeveloperText">
-                        med fokus på fullstack-utveckling och starkt intresse
-                        för webbanalys och datadriven utveckling!
+                        med fokus på kvalitet och struktur.
                     </p>
                     <button class="about-me-btn">
-                        <a id="aboutMe" href="about-me.html">Om mig</a>
+                        <a id="aboutMe" href="about-me.html">Om mig →</a>
                     </button>
                 </div>
             </div>
 
             <h1 id="myProjectsText" class="section">Mina Projekt</h1>
+            <p id="myProjectsExp">
+                Ett urval av projekt jag byggt — klicka på ett kort för mer info
+            </p>
             <div class="button-project-div section">
                 <button class="show-project" data-target="project1">
-                    Restaurant
+                    <span class="project-title">MyGameShop</span>
+                    <span class="project-desc"
+                        >Fullstack webshop built with React and Node.js</span
+                    >
+                    <span class="project-more">Info →</span>
                 </button>
 
                 <button class="show-project" data-target="project2">
-                    BookMyHair
+                    <span class="project-title">BookMyHair</span>
+                    <span class="project-desc"
+                        >Fullstack project with booking system built with
+                        Angular, Node.js and MongoDB</span
+                    >
+                    <span class="project-more">Info →</span>
                 </button>
 
                 <button class="show-project" data-target="project3">
-                    Open Weather App- with API
+                    <span class="project-title">Taste</span>
+                    <span class="project-desc"
+                        >Restaurant webpage with responsive design built with
+                        HTML, CSS and JavaScript</span
+                    >
+                    <span class="project-more">Info →</span>
                 </button>
 
                 <button class="show-project" data-target="project4">
-                    Wordpress
+                    <span class="project-title">Open Weather App</span>
+                    <span class="project-desc"
+                        >Weather app fetching real-time data from a public
+                        API</span
+                    >
+                    <span class="project-more">Info →</span>
                 </button>
             </div>
 
+            <div class="overlay hidden"></div>
             <!-- knapp 1 -->
             <div class="project hidden" id="project1">
-                <button class="close-project1">&times;</button>
-                <figure>
-                    <img
-                        src="images/restaurang-page.png"
-                        alt="guess_my_number game project"
-                        class="guess-number"
-                    />
-                </figure>
-                <p class="project-name">Taste Restaurang</p>
-
-                <ul>
-                    <li>HTML, CSS, Javascript</li>
-                    <li>Available in mobile-view</li>
-                    <li>Completed in March 2025</li>
-                    <li>Component-based header and footer</li>
-                </ul>
-
-                <a
-                    href="https://ceeessan.github.io/restaurant-page/////index.html"
-                    target="_blank"
-                    class="link-to-project"
-                    id="project1Open"
-                    >Se projektet</a
-                >
-            </div>
-            <div class="overlay hidden"></div>
-
-            <!-- knapp 2 -->
-            <div class="project hidden" id="project2">
-                <button class="close-project2">&times;</button>
-                <figure>
-                    <img
-                        src="images/bookMyHair.png"
-                        alt="img of bookMyHair project"
-                        class="guess-number"
-                    />
-                </figure>
-                <p class="project-name">BookMyHair - Hairsalon</p>
-
-                <ul>
-                    <li>Built with Angular, Typescript</li>
-                    <li>Backend with Node.js, Express</li>
-                    <li>Cloud-based with MongoDB Atlas</li>
-                    <li>Responsive design</li>
-                    <li>Email confirmation for booking</li>
-                    <li>Booking cancellation with token</li>
-                    <li>Completed in July 2025</li>
-                    <li>
-                        Backend startup may take ~20 seconds due to free
-                        hosting.
-                    </li>
-                </ul>
-
-                <a
-                    href="https://bookmyhair.netlify.app/"
-                    target="_blank"
-                    class="link-to-project"
-                    id="project2Open"
-                    >Se projektet</a
-                >
-            </div>
-
-            <!-- knapp 3 -->
-            <div class="project hidden" id="project3">
-                <button class="close-project3">&times;</button>
-                <figure>
-                    <img
-                        src="images/openweather.png"
-                        alt="API project img"
-                        class="guess-number"
-                    />
-                </figure>
-                <p class="project-name">Open Weather App - with API</p>
-
-                <ul>
-                    <li>HTML, CSS, Javascript</li>
-                    <li>Available in mobile-view</li>
-                    <li>A project created with API</li>
-                </ul>
-                <a
-                    href="https://ceeessan.github.io/weather-app/"
-                    target="_blank"
-                    class="link-to-project"
-                    id="project3Open"
-                    >Se projektet</a
-                >
-            </div>
-
-            <!-- knapp 4 -->
-            <div class="project hidden" id="project4">
-                <button class="close-project4">&times;</button>
                 <figure>
                     <img
                         src="images/wordpress-project.png"
                         alt="wordpress project img"
-                        class="guess-number"
+                        class="project-img"
                     />
                 </figure>
-                <p class="project-name" id="project4Name">WordPress</p>
+                <div class="project-body">
+                    <p class="project-name" id="project1Name">WordPress</p>
+                    <button class="close-project1">&times;</button>
+                    <ul>
+                        <li>Wordpress, Woocommerce</li>
+                        <li>Created with another Developer</li>
+                        <li>Available in Github</li>
+                    </ul>
 
-                <ul>
-                    <li>Wordpress, Woocommerce</li>
-                    <li>Created with another Developer</li>
-                    <li>Available in Github</li>
-                </ul>
-
-                <a
-                    href="https://github.com/Ceeessan/moody_studio.git"
-                    target="_blank"
-                    class="link-to-project github-icon"
-                >
-                    <i class="fa fa-github"></i>
-                </a>
+                    <a
+                        href="https://github.com/Ceeessan/moody_studio.git"
+                        target="_blank"
+                        class="link-to-project github-icon"
+                    >
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
             </div>
 
-            <article class="digital-analyst-container">
-                <div>
-                    <h1 class="digital-analyst-header">Digital Analys</h1>
-                    <p class="digital-analyst-p" id="learningAnalysisText1">
-                        Under 2025 började jag arbeta med föreningen
-                        Munskänkarna, där fick jag i uppdrag att analysera
-                        trafiken på deras webbplats med verktygen Google
-                        Analytics 4 (GA4) och Matomo. Intresset för digital
-                        analys har växt och jag fördjupar mina kunskaper med en
-                        fem-månaders YH-utbildning inom digital analys.
-                    </p>
-                    <p class="digital-analyst-p" id="learningAnalysisText2">
-                        Under min utbildning arbetar jag med att samla in och
-                        analysera KPI:er för att optimera webbtrafik och fatta
-                        datadrivna beslut. Jag säkerställer korrekt
-                        datainsamling och GDPR-anpassning. För detta använder
-                        jag viktiga verktyg såsom:
-                    </p>
+            <!-- knapp 2 -->
+            <div class="project hidden" id="project2">
+                <figure>
+                    <img
+                        src="images/bookMyHair.png"
+                        alt="img of bookMyHair project"
+                        class="project-img"
+                    />
+                </figure>
+                <div class="project-body">
+                    <p class="project-name">BookMyHair - Hairsalon</p>
+                    <button class="close-project2">&times;</button>
                     <ul>
-                        <li>GA4 (Google Analytics 4)</li>
-                        <li>GTM (Google Tag Manager)</li>
-                        <li>CMP (Consent Management Plattform)</li>
+                        <li>Built with Angular, Typescript</li>
+                        <li>Backend with Node.js, Express</li>
+                        <li>Cloud-based with MongoDB Atlas</li>
+                        <li>Responsive design</li>
+                        <li>Email confirmation for booking</li>
+                        <li>Booking cancellation with token</li>
+                        <li>Completed in July 2025</li>
+                        <li>
+                            Backend startup may take ~20 seconds due to free
+                            hosting.
+                        </li>
                     </ul>
+
+                    <a
+                        href="https://bookmyhair.netlify.app/"
+                        target="_blank"
+                        class="link-to-project"
+                        id="project2Open"
+                        >Se projektet →</a
+                    >
+                </div>
+            </div>
+
+            <!-- knapp 3 -->
+            <div class="project hidden" id="project3">
+                <figure>
+                    <img
+                        src="images/restaurang-page.png"
+                        alt="guess_my_number game project"
+                        class="project-img"
+                    />
+                </figure>
+                <div class="project-body">
+                    <p class="project-name">Restaurang Taste</p>
+                    <button class="close-project3">&times;</button>
+                    <ul>
+                        <li>HTML, CSS, Javascript</li>
+                        <li>Available in mobile-view</li>
+                        <li>Completed in March 2025</li>
+                        <li>Component-based header and footer</li>
+                    </ul>
+
+                    <a
+                        href="https://ceeessan.github.io/restaurant-page/////index.html"
+                        target="_blank"
+                        class="link-to-project"
+                        id="project3Open"
+                        >Se projektet →</a
+                    >
+                </div>
+            </div>
+
+            <!-- knapp 4 -->
+            <div class="project hidden" id="project4">
+                <figure>
+                    <img
+                        src="images/openweather.png"
+                        alt="API project img"
+                        class="project-img"
+                    />
+                </figure>
+                <div class="project-body">
+                    <p class="project-name">Open Weather App - with API</p>
+                    <button class="close-project4">&times;</button>
+                    <ul>
+                        <li>HTML, CSS, Javascript</li>
+                        <li>Available in mobile-view</li>
+                        <li>A project created with API</li>
+                    </ul>
+                    <a
+                        href="https://ceeessan.github.io/weather-app/"
+                        target="_blank"
+                        class="link-to-project"
+                        id="project4Open"
+                        >Se projektet →</a
+                    >
+                </div>
+            </div>
+
+            <article class="experience-block section">
+                <div>
+                    <h1 class="experience-block-header" id="experience">
+                        Erfarehnet
+                    </h1>
+                    <p class="experience-block-text" id="experienceText">
+                        Utöver mina egna projekt så har jag fått använda min
+                        kompetens i verkliga livet.
+                    </p>
+
+                    <section class="experience-container section">
+                        <h3
+                            class="experience-container-header"
+                            id="internshipHeader"
+                        >
+                            Praktik på Dise International AB
+                        </h3>
+                        <p
+                            class="experience-container-text"
+                            id="internshipText"
+                        >
+                            Byggde ett digital signage-CMS från grunden med
+                            inloggning, JWT-autentisering och filhantering.
+                            Hjälpte även till med interna rutiner och företagets
+                            hemsida.
+                        </p>
+                        <div class="experience-container-div">
+                            <ul class="experience-container-ul">
+                                <li class="experience-container-li">Angular</li>
+                                <li class="experience-container-li">
+                                    Typescript
+                                </li>
+                                <li class="experience-container-li">Node.js</li>
+                                <li class="experience-container-li">MongoDB</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="experience-container section">
+                        <h3
+                            class="experience-container-header"
+                            id="analyticHeader"
+                        >
+                            Digitalanalys för Munskänkarna
+                        </h3>
+                        <p class="experience-container-text" id="analyticText">
+                            Analyserade föreningens webbtrafik med GA4 och
+                            Matomo som underlag för en kommande uppdatering av
+                            sidan.
+                        </p>
+                        <div class="experience-container-div">
+                            <ul class="experience-container-ul">
+                                <li class="experience-container-li">
+                                    Google Analytics 4
+                                </li>
+                                <li class="experience-container-li">Matomo</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="experience-container section">
+                        <h3
+                            class="experience-container-header"
+                            id="analyticCourseHeader"
+                        >
+                            YH-kurs i Digital Analys
+                        </h3>
+                        <p
+                            class="experience-container-text"
+                            id="analyticCourseText"
+                        >
+                            Fördjupade mig i datakvalitet och GDPR-anpassning
+                            för att komplettera min tekniska kompetens.
+                        </p>
+                        <div class="experience-container-div">
+                            <ul class="experience-container-ul">
+                                <li class="experience-container-li">
+                                    Google Analytics 4
+                                </li>
+                                <li class="experience-container-li">GTM</li>
+                                <li class="experience-container-li">CMP</li>
+                                <li class="experience-container-li">GDPR</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
             </article>
 
-            <section class="knowledge-section">
+            <section class="knowledge-section section">
                 <p class="coding-text section" id="knowledgeText">
-                    Jag har erfarenhet av att utveckla webbapplikationer från
-                    grunden, både med frontend och backend. Jag arbetar med
-                    moderna tekniker som HTML, CSS, JavaScript och TypeScript
-                    samt ramverk som Angular och React. På backend-sidan har jag
-                    använt Node.js och Express i kombination med databaser som
-                    MongoDB. Jag är van att arbeta med Git och GitHub.
+                    Verktyg jag jobbar mest med:
                 </p>
 
                 <div class="knowledge-container section">
-                    <div class="knowledge-scroll">
-                        <figure>
-                            <img
-                                src="images/html.svg"
-                                alt="html icon"
-                                id="html"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">HTML5</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/css.svg"
-                                alt="css icon"
-                                id="css"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">CSS</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/js.svg"
-                                alt="js icon"
-                                id="js"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Javascript</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/typescript.svg"
-                                alt="typescript icon"
-                                id="typescript"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Typescript</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/angular.svg"
-                                alt="angular icon"
-                                id="angular"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Angular</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/react.svg"
-                                alt="react icon"
-                                id="react"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">React</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/git.svg"
-                                alt="git icon"
-                                id="git"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Git</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/github.svg"
-                                alt="github icon"
-                                id="github"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Github</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/uxui.png"
-                                alt="uxui"
-                                id="ux-ui icon"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">UX/UI</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/nodejs.png"
-                                alt="nodejs icon"
-                                id="nodejs"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Node JS</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/express.png"
-                                alt="expressjs icon"
-                                id="expressjs"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">Express.js</p>
-                        </figure>
-                        <figure>
-                            <img
-                                src="images/mongodb.svg"
-                                alt="mongodb icon"
-                                id="mongodb"
-                                class="knowledge-icon"
-                            />
-                            <p class="icon-text">MongoDB</p>
-                        </figure>
+                    <div class="icon-code-card">
+                        <h2>H5</h2>
+                        <p>HTML5</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>CSS</h2>
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>JS</h2>
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>TS</h2>
+                        <p>TypeScript</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Ng</h2>
+                        <p>Angular</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Rx</h2>
+                        <p>React</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Nd</h2>
+                        <p>Node.js</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Ex</h2>
+                        <p>Express.js</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Mo</h2>
+                        <p>MongoDB</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Gt</h2>
+                        <p>Git</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>Gh</h2>
+                        <p>Github</p>
+                    </div>
+
+                    <div class="icon-code-card">
+                        <h2>UX/UI</h2>
+                        <p>UX/UI</p>
                     </div>
                 </div>
             </section>
-
-            <article class="what-I-do-now section">
-                <h2 id="nowUpdate">Vad gör jag nu?</h2>
-                <p id="textUpdate1">
-                    Just nu jobbar jag på att utveckla min kompetens inom
-                    digital analys för att kombinera detta med min tekniska
-                    kompetens. Utöver min utbildning har jag haft möjlighet att
-                    hjälpa föreningen Munskänkarna, där jag har bidragit till
-                    att analysera deras trafik.
-                </p>
-            </article>
         </main>
 
         <footer>
@@ -449,14 +435,6 @@
                     <a href="mailto:cessan__94@hotmail.com" class="email-me"
                         >Cessan__94@hotmail.com
                     </a>
-                </p>
-                <p>
-                    <a
-                        href="/privacy-policy.html"
-                        class="email-me"
-                        target="_blank"
-                        >Policy</a
-                    >
                 </p>
             </div>
         </footer>

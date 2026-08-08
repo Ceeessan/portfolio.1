@@ -37,8 +37,9 @@ const toggleTextAboutMe = {
         languageTogglerAboutMe: "English",
         portfolioByAboutMe: "Portfolio av",
         coverLetter: "Personlight Brev",
-        nameInfo: "Namn: Cecilia Carlsen",
-        livingInfo: "Boende: Munka-Ljungby",
+        greeting: "Hej, jag är Cecilia! 👋",
+        nameInfo: "Bor i Munka-Ljungby",
+        livingInfo: "Har körkort",
         educationTabMenu: "Utbildning",
         courseTabMenu: "Kurser",
         afterEducationTabMenu: "Efter utbildning",
@@ -46,7 +47,7 @@ const toggleTextAboutMe = {
         header1AboutMe:
             "Min utbildning",
         text1AboutMe:
-            "För ett par år sedan valde att gå en annan väg i karriären och bestämde mig för att plugga inom IT! Jag utbildade mig i Webbutveckling inriktning E-handel. Under sista halvåret på min utbildning så gjorde jag min praktik på Dise International AB. Under praktiken byggde jag bland annat ett eget CMS med Angular, Typescript, Node.js, Express och MongoDB. Projektet gav mig en stor erfarenhet av hela utvecklingsprocessen. Bland annat fick jag implementera autentisering med JWT-tokens samt hantera filnedladdningar till databasen på ett säkert sätt. ",
+            "Jag har gått en YH-utbildning inom Webbutveckling med inriktning E-handel. Sista halvåret på min utbildning gjorde jag min praktik på Dise International AB, där jag byggde ett eget CMS från grunden. Bland annat fick jag implementera autentisering med JWT-tokens samt hantera filnedladdningar till databasen på ett säkert sätt. Utöver detta har jag tagit några kurser av eget intresse, samt gått en YH-kurs i digital analys för att lära mig öka kvaliteten på en hemsida med hjälp av verkliga mätningar.",
         takenCourseH4:
             "Kurser jag tagit",
         coursesFromEducation:
@@ -58,7 +59,7 @@ const toggleTextAboutMe = {
         courseNow:
             "Nuvarande Kurs",
         text2AboutMe:
-            "Efter min utbildning har jag skapat några projekt som man bland annat kan hitta här i mitt portfolio, men även på min github. Jag har tagit några extra kurser utöver mitt vanliga jobb där jag har finslipat mina kunskaper men också lärt mig nytt. Jag har även fått möjligheten att jobba med föreningen Munskänkarna där jag just nu analyserar hemsidan för att få fram användarflödet. Vidare kommer vi att implementera förbättringar på sidan som kommer att bli ett projekt för 2026.",
+            "Efter min utbildning har jag skapat några projekt som man bland annat kan hitta här i mitt portfolio, men även på min github. Jag har även fått möjligheten att jobba med föreningen Munskänkarna där jag analyserade hemsidan för att förbättra användarflödet. Vidare kommer vi att implementera förbättringarna på sidan som kommer att bli ett projekt för framtiden.",
         header3AboutMe:
             "Efter min utbildning",
         text3AboutMe:
@@ -71,8 +72,9 @@ const toggleTextAboutMe = {
         languageTogglerAboutMe: "Swedish",
         portfolioByAboutMe: "Portfolio By",
         coverLetter: "Cover Letter",
-        nameInfo: "Name: Cecilia Carlsen",
-        livingInfo: "Living: Munka-Ljungby",
+        greeting: "Hi, I'm Cecilia! 👋",
+        nameInfo: "I live in Munka-Ljungby",
+        livingInfo: "I have a drivers lisence",
         educationTabMenu: "Education",
         courseTabMenu: "Courses",
         afterEducationTabMenu: "After education",
@@ -80,7 +82,7 @@ const toggleTextAboutMe = {
         header1AboutMe:
             "My Education",
         text1AboutMe:
-            "A few years ago, I decided to take a different path in my career and chose to study IT. I completed a Web Development program with a focus on E-commerce. During the last six months of my studies, I did my internship at Dise International AB. During the internship, I built, among other things, my own CMS using Angular, TypeScript, Node.js, Express, and MongoDB. The project gave me extensive experience in the entire development process, including implementing authentication with JWT tokens and securely handling file uploads to the database.",
+            "I have completed a vocational (YH) education in Web Development with a focus on E-commerce. During the last term of my studies, I did my internship at Dise International AB, where I built my own CMS from scratch. Among other things, I implemented authentication with JWT tokens and handled secure file uploads to the database. I have also taken a few courses out of personal interest, as well as a vocational course in digital analytics to learn how to improve website quality using real-world metrics.",
         takenCourseH4:
             "Courses Completed",
         coursesFromEducation:
@@ -92,7 +94,7 @@ const toggleTextAboutMe = {
         courseNow:
             "Current Course (In Swedish)",
         text2AboutMe:
-            "After completing my education, I have created several projects, which can be found here in my portfolio as well as on my GitHub. I have also taken additional courses alongside my regular work, which have allowed me to refine my skills and learn new ones. I have had the opportunity to work with the Munskänkarna association, where I am currently analyzing their website to understand user flows. Moving forward, we will implement improvements to the site, which will be a project for 2026.",
+            "After completing my education, I have created several projects, which can be found here in my portfolio as well as on my GitHub. I have also had the opportunity to work with the Munskänkarna association, where I analyzed their website to improve the user flow. Going forward, we will implement these improvements to the site, which will become a future project.",
         header3AboutMe:
             "After my Education",
         text3AboutMe:
@@ -105,6 +107,7 @@ const toggleTextAboutMe = {
 
 const portfolioByAboutMe = document.getElementById('portfolioByAboutMe');
 const coverLetter = document.getElementById('coverLetter');
+const greeting = document.getElementById('greeting');
 const nameInfo = document.getElementById('nameInfo');
 const livingInfo = document.getElementById('livingInfo');
 const educationTabMenu = document.getElementById('educationTabMenu');
@@ -133,6 +136,7 @@ function switchLanguageAboutMe() {
     togglerButtonAboutMe.textContent = toggleTextAboutMe[currentLanguageAboutMe].languageTogglerAboutMe;
     portfolioByAboutMe.textContent = toggleTextAboutMe[currentLanguageAboutMe].portfolioByAboutMe;
     coverLetter.textContent = toggleTextAboutMe[currentLanguageAboutMe].coverLetter;
+    greeting.textContent = toggleTextAboutMe[currentLanguageAboutMe].greeting;
     nameInfo.textContent = toggleTextAboutMe[currentLanguageAboutMe].nameInfo;
     livingInfo.textContent = toggleTextAboutMe[currentLanguageAboutMe].livingInfo;
     educationTabMenu.textContent = toggleTextAboutMe[currentLanguageAboutMe].educationTabMenu;

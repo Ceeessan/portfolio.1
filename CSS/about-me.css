@@ -4,20 +4,10 @@
     box-sizing: border-box;
 }
 
-:root {
-    --secondary-color: #bda68c;
-    --dark-color: #222222;
-    --primary-color: #423c28;
-    --light-background: rgb(158, 154, 154);
-}
-
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     position: relative;
-    background-image: url("../images/texture-img.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f7f7f5;
 }
 
 header {
@@ -32,7 +22,10 @@ header .header-background {
 }
 
 header #portfolioByAboutMe {
-    color: var(--secondary-color);
+    background: linear-gradient(90deg, #3e7c8c, #abd0b3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-family:
         Dancing Script,
         Arial,
@@ -50,8 +43,11 @@ header .my-name {
         Helvetica,
         sans-serif;
     line-height: 4rem;
+    background: linear-gradient(90deg, #3e7c8c, #abd0b3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: 3.2rem;
-    color: var(--primary-color);
     margin-left: 2.5rem;
     text-decoration: none;
     transition:
@@ -60,7 +56,10 @@ header .my-name {
 }
 
 header .my-name:hover {
-    color: var(--secondary-color);
+    background: linear-gradient(90deg, #275d6b, #83a28a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: 3.25rem;
 }
 
@@ -73,27 +72,28 @@ header #languageToggler {
     height: 2rem;
     width: 6.5rem;
     font-size: 0.8rem;
-    color: var(--primary-color);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    background: radial-gradient(
-        circle at 50% 40%,
-        #ffffff 0%,
-        #f3f4f6 55%,
-        #e5e7eb 100%
-    );
+    border: 1px solid rgba(91, 135, 145, 0.6);
     box-shadow:
-        10px 10px 22px rgba(154, 154, 154, 0.12),
-        inset 4px 4px 8px rgba(140, 140, 140, 0.15),
-        inset -4px -4px 8px rgba(211, 211, 211, 0.8);
-    border: 1px solid rgba(101, 98, 98, 0.6);
+        0 8px 20px rgba(90, 145, 159, 0.18),
+        0 2px 6px rgba(190, 226, 198, 0.25);
     border-radius: 10rem;
     cursor: pointer;
+    background: linear-gradient(90deg, #3e7c8c, #93b89b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
 }
 
 header #languageToggler:hover {
-    width: 6.2rem;
-    font-size: 13px;
+    transform: scale(1.05);
+    box-shadow:
+        0 12px 28px rgba(90, 145, 159, 0.28),
+        0 4px 10px rgba(190, 226, 198, 0.35);
 }
 
 main .arrow-icon-container {
@@ -101,23 +101,25 @@ main .arrow-icon-container {
 }
 
 main .arrow-icon {
-    font-size: 1.8rem;
-    color: var(--dark-color);
-    transition: color 0.3s ease;
-}
-
-main .arrow-icon:hover {
-    color: var(--primary-color);
+    font-size: 3rem;
+    background: linear-gradient(90deg, #3e7c8c, #93b89b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
 }
 
 main .image-and-info-container {
     max-width: 60%;
     padding: 2rem;
-    background-color: rgb(213, 213, 213);
-    box-shadow: 2px 2px 10px grey;
+    border: 1px solid rgba(91, 135, 145, 0.6);
+    box-shadow:
+        0 8px 20px rgba(90, 145, 159, 0.18),
+        0 2px 6px rgba(190, 226, 198, 0.25);
     border-radius: 10px;
     margin: auto;
     margin-bottom: 2rem;
+    background-color: rgb(252, 252, 252);
 }
 
 main .image-and-info-container .info-container-name-living {
@@ -127,6 +129,10 @@ main .image-and-info-container .info-container-name-living {
 #coverLetter {
     text-align: center;
     padding-bottom: 1rem;
+    background: linear-gradient(90deg, #3e7c8c, #93b89b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 main .image-and-info {
@@ -145,11 +151,18 @@ main .image-and-info img {
     border-radius: 5px;
 }
 
+main #greeting {
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
 main .image-and-info ul {
     list-style-type: none;
     line-height: 1.5rem;
     text-align: left;
     font-weight: 300;
+    color: grey;
 }
 
 main .about-me-tabs {
@@ -165,12 +178,22 @@ main .about-me-tabs {
 }
 
 main .about-me-tabs .tab-link {
-    color: black;
     text-decoration: none;
+    background: linear-gradient(90deg, #316370, #728f78);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 main .about-me-tabs .tab-link.active {
-    border-bottom: 1px solid black;
+    /* border-bottom: 2px solid rgb(39, 146, 119); */
+    padding: 1rem 1rem;
+    background: linear-gradient(90deg, #316370, #728f78);
+    color: white;
+    box-shadow:
+        0 8px 20px rgba(90, 145, 159, 0.18),
+        0 2px 6px rgba(190, 226, 198, 0.25);
+    border-radius: 100px;
 }
 
 .tab-panel {
@@ -224,7 +247,7 @@ footer {
     line-height: 3rem;
     background-color: #2c2c2c;
     padding: 1.5rem 1.4rem;
-    background-color: var(--dark-color);
+    background: linear-gradient(90deg, #316370, #728f78);
 }
 
 .footer-container {
@@ -287,14 +310,6 @@ footer a.email-me {
     height: 1, 5rem;
     font-size: 0.8rem;
     text-decoration: none;
-}
-
-a.termly-display-preferences {
-    color: white;
-    font-size: 0.8rem;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 300;
 }
 
 @media (max-width: 610px) {
